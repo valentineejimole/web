@@ -436,7 +436,7 @@ export const sidebar: Sidebar = {
     {
         text: 'Quickstart', 
         items: [
-            { text: 'Quickstart Guide', link: '/base-chain/quickstart/quickstart-guide' },
+            { text: 'Deploy Quickstart', link: '/base-chain/quickstart/deploy-quickstart' },
         ],
     },
     {
@@ -448,13 +448,19 @@ export const sidebar: Sidebar = {
     {
         text: 'Tutorials',
         items: [
-            { text: 'Tutorial 1', link: '/base-chain/tutorials/tutorial-1' },
+            { text: 'Run a Base Node', link: '/base-chain/tutorials/run-a-base-node' },
+            { text: 'Bridging an L1 token to Base', link: '/base-chain/tutorials/token-list' },
         ],
     },
     {
         text: 'Documentation',
         items: [
-            { text: 'Documentation 1', link: '/base-chain/documentation/documentation-1' },
+            { text: 'Network Information', link: '/base-chain/documentation/network-information' },
+            { text: 'Network Faucets', link: '/base-chain/documentation/network-faucets' },
+            { text: 'Fees', link: '/base-chain/documentation/fees' },
+            { text: 'Node Providers', link: '/base-chain/documentation/node-providers' },
+            { text: 'Security', link: '/base-chain/documentation/security' },
+            { text: 'Differences between Base and Ethereum', link: '/base-chain/documentation/differences'},
         ],
     },
     {
