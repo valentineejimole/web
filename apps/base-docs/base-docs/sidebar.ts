@@ -338,31 +338,95 @@ export const sidebar: Sidebar = {
         ],
     }
   ],
-  '/chain-tools/paymaster/': [
+  '/chain-tools': [
     {
-      text: 'Paymaster',
-      items: [
-        { text: 'Quickstart Guide', link: '/chain-tools/paymaster/quickstart-guide' },
-        { text: 'Overview', link: '/chain-tools/paymaster/overview' },
-        { text: 'Tutorials', link: '/chain-tools/paymaster/tutorials' },
-        { text: 'Documentation', link: '/chain-tools/paymaster/documentation' },
-        { text: 'FAQ & Troubleshooting', link: '/chain-tools/paymaster/faq-troubleshooting' },
-        { text: 'Support & Contribution', link: '/chain-tools/paymaster/support-contribution' },
-      ],
+        text: 'Overview',
+        link: '/chain-tools/',
     },
-  ],
-  '/chain-tools/l3-launcher/': [
     {
-      text: 'L3 Launcher',
-      items: [
-        { text: 'Quickstart Guide', link: '/chain-tools/l3-launcher/quickstart-guide' },
-        { text: 'Product Overview', link: '/chain-tools/l3-launcher/product-overview' },
-        { text: 'Tutorials', link: '/chain-tools/l3-launcher/tutorials' },
-        { text: 'Documentation', link: '/chain-tools/l3-launcher/documentation' },
-        { text: 'FAQ & Troubleshooting', link: '/chain-tools/l3-launcher/faq-troubleshooting' },
-        { text: 'Support & Contribution', link: '/chain-tools/l3-launcher/support-contribution' },
-      ],
+        text: 'Paymaster',
+        collapsed: true,
+        items: [
+            {
+                text: 'Quickstart',
+                items: [
+                    { text: 'Quickstart Guide', link: '/chain-tools/paymaster/quickstart-guide' },
+                ],
+            },
+            {
+                text: 'Introduction',
+                items: [
+                    { text: 'Introduction 1', link: '/chain-tools/paymaster/introduction-1' },
+                ],
+            },
+            {
+                text: 'Tutorials',
+                items: [
+                    { text: 'Tutorial 1', link: '/chain-tools/paymaster/tutorials/tutorial-1' },
+                ],
+            },
+            {
+                text: 'Documentation',
+                items: [
+                    { text: 'Documentation 1', link: '/chain-tools/paymaster/documentation/documentation-1' },
+                ],
+            },
+            {
+                text: 'FAQ & Troubleshooting',
+                items: [
+                    { text: 'FAQ & Troubleshooting 1', link: '/chain-tools/paymaster/faq-troubleshooting/faq-troubleshooting-1' },
+                ],
+            },
+            {
+                text: 'Support & Contribution',
+                items: [
+                    { text: 'Support & Contribution 1', link: '/chain-tools/paymaster/support-contribution/support-contribution-1' },
+                ],
+            },
+        ],
     },
+    {
+        text: 'L3 Launcher',
+        collapsed: true,
+        items: [
+            {
+                text: 'Quickstart',
+                items: [
+                    { text: 'Quickstart Guide', link: '/chain-tools/l3-launcher/quickstart-guide' },
+                ],
+            },
+            {
+                text: 'Introduction',
+                items: [
+                    { text: 'Introduction 1', link: '/chain-tools/l3-launcher/introduction-1' },
+                ],
+            },
+            {
+                text: 'Tutorials',
+                items: [
+                    { text: 'Tutorial 1', link: '/chain-tools/l3-launcher/tutorials/tutorial-1' },
+                ],
+            },
+            {
+                text: 'Documentation',
+                items: [
+                    { text: 'Documentation 1', link: '/chain-tools/l3-launcher/documentation/documentation-1' },
+                ],
+            },
+            {
+                text: 'FAQ & Troubleshooting',
+                items: [
+                    { text: 'FAQ & Troubleshooting 1', link: '/chain-tools/l3-launcher/faq-troubleshooting/faq-troubleshooting-1' },
+                ],
+            },
+            {
+                text: 'Support & Contribution',
+                items: [
+                    { text: 'Support & Contribution 1', link: '/chain-tools/l3-launcher/support-contribution/support-contribution-1' },
+                ],
+            },
+        ],
+    }
   ],
   '/base-chain/': [
     {
