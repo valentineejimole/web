@@ -23,25 +23,39 @@ const bannerConfig = {
 }
 
 const sidebarConfig = {
-  sidebar: sidebar,
+  sidebar: sidebar
 }
 
 const topNavConfig = {
   topNav: [
-    {
-      text: 'Getting Started', link: '/getting-started', match: '/docs'
+    { text: 'Getting Started', link: '/getting-started', match: '/getting-started' },
+    { 
+      text: 'App Tools', 
+      link: '/app-tools', 
+      match: '/app-tools',
     },
-    {
-      text: 'Wallet Tools', link: '/wallet-tools', match: '/wallet-tools'
+    { 
+      text: 'Wallet Tools', 
+      link: '/wallet-tools', 
+      match: '/wallet-tools',
     },
-    {
-      text: 'Developer Tools', link: '/developer-tools', match: '/developer-tools'
+    { 
+      text: 'Chain Tools', 
+      link: '/chain-tools', 
+      match: '/chain-tools',
     },
-    {
-      text: 'Chain Tools', link: '/chain-tools', match: '/chain-tools'
+    { 
+      text: 'Base Chain', 
+      link: '/base-chain', 
+      match: '/base-chain',
     },
-
+    { 
+      text: 'Guides', 
+      link: '/guides', 
+      match: '/guides'
+    },
   ],
+  layout: 'left',
 }
 
 const markdownConfig = {
@@ -57,6 +71,7 @@ const markdownConfig = {
 const pluggableConfig ={
   markdown: {
     remarkPlugins: [
+      // Add your remark plugins here
     ]
   }
 }
@@ -92,7 +107,8 @@ const searchConfig = {
       prefix: true, // Autocomplete
       fuzzy: 0.2,  // Typo tolerance
       boost: { docType: { 'API': 2, 'Guide': 1.5 }, recencyScore: 2 }, // Boosting by document type and recency
-      filter: (doc: { productLine: string }) => doc.productLine === 'Base Protocol' || doc.productLine === 'OnchainKit', // Faceted search
+      filter: (doc: { productLine: string }) => 
+        doc.productLine === 'Base Protocol' || doc.productLine === 'OnchainKit', // Faceted search
       highlight: true, // Instant search result preview
       limit: 10 // Pagination
     }
@@ -117,7 +133,5 @@ export default defineConfig({
    * onBrokenLinks and markdown links not in config
    * organizationName and projectName not in config
    *
-
-
 
 */
