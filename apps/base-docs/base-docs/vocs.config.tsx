@@ -1,5 +1,5 @@
-import React from 'react'
 import { defineConfig } from 'vocs'
+import { sidebar } from './sidebar.ts'
 
 
 const baseConfig = {
@@ -23,42 +23,7 @@ const bannerConfig = {
 }
 
 const sidebarConfig = {
-  sidebar: {
-    '/getting-started':[{
-      text: 'Getting Started',
-      link: '/getting-started',
-    },
-    {
-      text: 'Example',
-      link: '/example',
-    },
-    {
-      text: 'Guides',
-      items: [
-        {
-          text: 'Guide 1',
-          link: '/guides/guide-1',
-        },
-      ]
-    }],
-    '/onchainkit': [{
-      text: 'Onchainkit',
-      link: '/onchainkit/quickstart',
-    },
-    {
-      text: 'Quickstart',
-      link: '/onchainkit/quickstart',
-    },
-    {
-      text: 'Guides',
-      items: [
-        {
-          text: 'Guide 1',
-          link: '/onchainkit/guide-1',
-        },
-      ]
-    }],
-  }
+  sidebar: sidebar,
 }
 
 const topNavConfig = {
