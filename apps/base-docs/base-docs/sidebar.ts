@@ -38,44 +38,147 @@ export const sidebar: Sidebar = {
       ],
     },
   ],
-  '/app-tools/': [
+  '/app-tools': [
     {
-      text: 'App Tools',
-      link: '/app-tools',
+      text: 'Overview',
+      link: '/app-tools/',
     },
     {
         text: 'OnchainKit',
+        collapsed: true,
         items: [
-        { text: 'Quickstart Guide', link: '/app-tools/onchainkit/quickstart-guide' },
-        { text: 'Overview', link: '/app-tools/onchainkit/overview' },
-        { text: 'Tutorials', link: '/app-tools/onchainkit/tutorials' },
-        { text: 'Templates', link: '/app-tools/onchainkit/templates' },
-        { text: 'Documentation', link: '/app-tools/onchainkit/documentation' },
-        { text: 'FAQ & Troubleshooting', link: '/app-tools/onchainkit/faq-troubleshooting' },
-        { text: 'Support & Contribution', link: '/app-tools/onchainkit/support-contribution' },
+            {
+                text: 'Quickstart', 
+                items: [
+                    { text: 'Quickstart Guide', link: '/app-tools/onchainkit/quickstart-guide' },
+                ],
+            },
+            { 
+                text: 'Introduction',
+                items: [
+                    { text: 'Why OnchainKit?', link: '/app-tools/onchainkit/introduction' },
+                    { text: 'Tutorials', link: '/app-tools/onchainkit/tutorials' },
+                    { text: 'Templates', link: '/app-tools/onchainkit/templates' },
+                    { text: 'Documentation', link: '/app-tools/onchainkit/documentation' },
+                    { text: 'FAQ & Troubleshooting', link: '/app-tools/onchainkit/faq-troubleshooting' },
+                    { text: 'Support & Contribution', link: '/app-tools/onchainkit/support-contribution' },
+                ],
+            },
+            {
+                text: 'Tutorials',
+                items: [
+                    { text: 'Tutorial 1', link: '/app-tools/onchainkit/tutorials/tutorial-1' },
+                ],
+            },
+            {
+                text: 'Templates',
+                items: [
+                    { text: 'Template 1', link: '/app-tools/onchainkit/templates/template-1' },
+                ],
+            },
+            {
+                text: 'Documentation',
+                items: [
+                    { text: 'Documentation 1', link: '/app-tools/onchainkit/documentation/documentation-1' },
+                ],
+            },
+            {
+                text: 'FAQ & Troubleshooting',
+                items: [
+                    { text: 'FAQ & Troubleshooting 1', link: '/app-tools/onchainkit/faq-troubleshooting/faq-troubleshooting-1' },
+                ],
+            },
+            {
+                text: 'Support & Contribution',
+                items: [
+                    { text: 'Support & Contribution 1', link: '/app-tools/onchainkit/support-contribution/support-contribution-1' },
+                ],
+            },
         ],
     },
     {
         text: 'Basenames',
+        collapsed: true,
         items: [
-        { text: 'Quickstart Guide', link: '/app-tools/basenames/quickstart-guide' },
-        { text: 'Overview', link: '/app-tools/basenames/overview' },
-        { text: 'Tutorials', link: '/app-tools/basenames/tutorials' },
-        { text: 'Documentation', link: '/app-tools/basenames/documentation' },
-        { text: 'FAQ & Troubleshooting', link: '/app-tools/basenames/faq-troubleshooting' },
-        { text: 'Support & Contribution', link: '/app-tools/basenames/support-contribution' },
-        ],
+            { 
+                text: 'Quickstart', 
+                items: [
+                    { text: 'Quickstart Guide', link: '/app-tools/basenames/quickstart-guide' },
+                ],
+            },
+            {
+                text: 'Introduction',
+                items: [
+                    { text: 'Introduction 1', link: '/app-tools/basenames/introduction-1' },
+                ],
+            },
+            {
+                text: 'Tutorials',
+                items: [
+                    { text: 'Tutorial 1', link: '/app-tools/basenames/tutorials/tutorial-1' },
+                ],
+            },
+            {
+                text: 'Documentation',
+                items: [
+                    { text: 'Documentation 1', link: '/app-tools/basenames/documentation/documentation-1' },
+                ],
+            },
+            {
+                text: 'FAQ & Troubleshooting',
+                items: [
+                    { text: 'FAQ & Troubleshooting 1', link: '/app-tools/basenames/faq-troubleshooting/faq-troubleshooting-1' },
+                ],
+            },
+            {
+                text: 'Support & Contribution',
+                items: [
+                    { text: 'Support & Contribution 1', link: '/app-tools/basenames/support-contribution/support-contribution-1' },
+                ],
+            },
+        ]
     },
     {
         text: 'Verifications',
+        collapsed: true,
         items: [
-        { text: 'Quickstart Guide', link: '/app-tools/verifications/quickstart-guide' },
-        { text: 'Overview', link: '/app-tools/verifications/overview' },
-        { text: 'Tutorials', link: '/app-tools/verifications/tutorials' },
-        { text: 'Documentation', link: '/app-tools/verifications/documentation' },
-        { text: 'FAQ & Troubleshooting', link: '/app-tools/verifications/faq-troubleshooting' },
-        { text: 'Support & Contribution', link: '/app-tools/verifications/support-contribution' },
-        ],
+            {
+                text: 'Quickstart',
+                items: [
+                    { text: 'Quickstart Guide', link: '/app-tools/verifications/quickstart-guide' },
+                ],
+            },
+            {
+                text: 'Introduction',
+                items: [
+                    { text: 'Introduction 1', link: '/app-tools/verifications/introduction-1' },
+                ],
+            },
+            {
+                text: 'Tutorials',
+                items: [
+                    { text: 'Tutorial 1', link: '/app-tools/verifications/tutorials/tutorial-1' },
+                ],
+            },
+            {
+                text: 'Documentation',
+                items: [
+                    { text: 'Documentation 1', link: '/app-tools/verifications/documentation/documentation-1' },
+                ],
+            },
+            {
+                text: 'FAQ & Troubleshooting',
+                items: [
+                    { text: 'FAQ & Troubleshooting 1', link: '/app-tools/verifications/faq-troubleshooting/faq-troubleshooting-1' },
+                ],
+            },
+            {
+                text: 'Support & Contribution',
+                items: [
+                    { text: 'Support & Contribution 1', link: '/app-tools/verifications/support-contribution/support-contribution-1' },
+                ],
+            },
+        ]
     },
   ],
   '/wallet-tools/wallet-sdk/': [
