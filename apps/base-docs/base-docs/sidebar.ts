@@ -428,17 +428,46 @@ export const sidebar: Sidebar = {
         ],
     }
   ],
-  '/base-chain/': [
+  '/base-chain': [
     {
-      text: 'Base Chain',
-      items: [
-        { text: 'Quickstart Guide', link: '/base-chain/quickstart-guide' },
-        { text: 'Overview', link: '/base-chain/overview' },
-        { text: 'Tutorials', link: '/base-chain/tutorials' },
-        { text: 'Documentation', link: '/base-chain/documentation' },
-        { text: 'FAQ & Troubleshooting', link: '/base-chain/faq-troubleshooting' },
-        { text: 'Support & Contribution', link: '/base-chain/support-contribution' },
-      ],
+      text: 'Overview',
+      link: '/base-chain/',
+    },
+    {
+        text: 'Quickstart', 
+        items: [
+            { text: 'Quickstart Guide', link: '/base-chain/quickstart/quickstart-guide' },
+        ],
+    },
+    {
+        text: 'Introduction',
+        items: [
+            { text: 'Introduction 1', link: '/base-chain/introduction/introduction-1' },
+        ],
+    },
+    {
+        text: 'Tutorials',
+        items: [
+            { text: 'Tutorial 1', link: '/base-chain/tutorials/tutorial-1' },
+        ],
+    },
+    {
+        text: 'Documentation',
+        items: [
+            { text: 'Documentation 1', link: '/base-chain/documentation/documentation-1' },
+        ],
+    },
+    {
+        text: 'FAQ & Troubleshooting',
+        items: [
+            { text: 'FAQ & Troubleshooting 1', link: '/base-chain/faq-troubleshooting/faq-troubleshooting-1' },
+        ],
+    },
+    {
+        text: 'Support & Contribution',
+        items: [
+            { text: 'Support & Contribution 1', link: '/base-chain/support-contribution/support-contribution-1' },
+        ],
     },
   ],
   '/guides/getting-started-building-onchain/': [
