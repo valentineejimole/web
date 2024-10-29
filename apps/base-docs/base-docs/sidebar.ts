@@ -181,54 +181,162 @@ export const sidebar: Sidebar = {
         ]
     },
   ],
-  '/wallet-tools/wallet-sdk/': [
+  '/wallet-tools': [
+    {
+      text: 'Overview',
+      link: '/wallet-tools/',
+    },
     {
       text: 'Wallet SDK',
+      collapsed: true,
       items: [
-        { text: 'Quickstart Guide', link: '/wallet-tools/wallet-sdk/quickstart-guide' },
-        { text: 'Overview', link: '/wallet-tools/wallet-sdk/overview' },
-        { text: 'Tutorials', link: '/wallet-tools/wallet-sdk/tutorials' },
-        { text: 'Documentation', link: '/wallet-tools/wallet-sdk/documentation' },
-        { text: 'FAQ & Troubleshooting', link: '/wallet-tools/wallet-sdk/faq-troubleshooting' },
-        { text: 'Support & Contribution', link: '/wallet-tools/wallet-sdk/support-contribution' },
-      ],
+        {
+            text: 'Quickstart',
+            items: [
+                { text: 'Quickstart Guide', link: '/wallet-tools/wallet-sdk/quickstart-guide' },
+            ],
+        },
+        {
+            text: 'Introduction',
+            items: [
+                { text: 'Introduction 1', link: '/wallet-tools/wallet-sdk/introduction-1' },
+            ],
+        },
+        {
+            text: 'Tutorials',
+            items: [
+                { text: 'Tutorial 1', link: '/wallet-tools/wallet-sdk/tutorials/tutorial-1' },
+            ],
+        },
+        {
+            text: 'Documentation',
+            items: [
+                { text: 'Documentation 1', link: '/wallet-tools/wallet-sdk/documentation/documentation-1' },
+            ],
+        },
+        {
+            text: 'FAQ & Troubleshooting',
+            items: [
+                { text: 'FAQ & Troubleshooting 1', link: '/wallet-tools/wallet-sdk/faq-troubleshooting/faq-troubleshooting-1' },
+            ],
+        },
+      ]
     },
-  ],
-  '/wallet-tools/smart-wallet/': [
     {
       text: 'Smart Wallet (Base Wallet)',
+      collapsed: true,
       items: [
-        { text: 'Quickstart Guide', link: '/wallet-tools/smart-wallet/quickstart-guide' },
-        { text: 'Overview', link: '/wallet-tools/smart-wallet/overview' },
-        { text: 'Tutorials', link: '/wallet-tools/smart-wallet/tutorials' },
-        { text: 'Documentation', link: '/wallet-tools/smart-wallet/documentation' },
-        { text: 'FAQ & Troubleshooting', link: '/wallet-tools/smart-wallet/faq-troubleshooting' },
-      ],
+        { 
+            text: 'Quickstart', 
+            items: [
+                { text: 'Quickstart Guide', link: '/wallet-tools/smart-wallet/quickstart-guide' },
+            ]
+        },
+        {
+            text: 'Introduction',
+            items: [
+                { text: 'Introduction 1', link: '/wallet-tools/smart-wallet/introduction-1' },
+            ],
+        },
+        {
+            text: 'Tutorials',
+            items: [
+                { text: 'Tutorial 1', link: '/wallet-tools/smart-wallet/tutorials/tutorial-1' },
+            ],
+        },
+        {
+            text: 'Documentation',
+            items: [
+                { text: 'Documentation 1', link: '/wallet-tools/smart-wallet/documentation/documentation-1' },
+            ],
+        },
+        {
+            text: 'FAQ & Troubleshooting',
+            items: [
+                { text: 'FAQ & Troubleshooting 1', link: '/wallet-tools/smart-wallet/faq-troubleshooting/faq-troubleshooting-1' },
+            ],
+        },
+      ]
     },
-  ],
-  '/wallet-tools/mobile-wallet-protocol/': [
     {
-      text: 'Mobile Wallet Protocol',
-      items: [
-        { text: 'Quickstart Guide', link: '/wallet-tools/mobile-wallet-protocol/quickstart-guide' },
-        { text: 'Overview', link: '/wallet-tools/mobile-wallet-protocol/overview' },
-        { text: 'Tutorials', link: '/wallet-tools/mobile-wallet-protocol/tutorials' },
-        { text: 'Documentation', link: '/wallet-tools/mobile-wallet-protocol/documentation' },
-        { text: 'FAQ & Troubleshooting', link: '/wallet-tools/mobile-wallet-protocol/faq-troubleshooting' },
-      ],
+        text: 'Mobile Wallet Protocol',
+        collapsed: true,
+        items: [
+            {
+                text: 'Quickstart',
+                items: [
+                    { text: 'Quickstart Guide', link: '/wallet-tools/mobile-wallet-protocol/quickstart-guide' },
+                ],
+            },
+            {
+                text: 'Introduction',
+                items: [
+                    { text: 'Introduction 1', link: '/wallet-tools/mobile-wallet-protocol/introduction-1' },
+                ],
+            },
+            {
+                text: 'Tutorials',
+                items: [
+                    { text: 'Tutorial 1', link: '/wallet-tools/mobile-wallet-protocol/tutorials/tutorial-1' },
+                ],
+            },
+            {
+                text: 'Documentation',
+                items: [
+                    { text: 'Documentation 1', link: '/wallet-tools/mobile-wallet-protocol/documentation/documentation-1' },
+                ],
+            },
+            {
+                text: 'FAQ & Troubleshooting',
+                items: [
+                    { text: 'FAQ & Troubleshooting 1', link: '/wallet-tools/mobile-wallet-protocol/faq-troubleshooting/faq-troubleshooting-1' },
+                ],
+            },
+        ]
     },
-  ],
-  '/wallet-tools/magic-spend/': [
     {
-      text: 'Magic Spend',
-      items: [
-        { text: 'Quickstart Guide', link: '/wallet-tools/magic-spend/quickstart-guide' },
-        { text: 'Overview', link: '/wallet-tools/magic-spend/overview' },
-        { text: 'Tutorials', link: '/wallet-tools/magic-spend/tutorials' },
-        { text: 'Documentation', link: '/wallet-tools/magic-spend/documentation' },
-        { text: 'FAQ & Troubleshooting', link: '/wallet-tools/magic-spend/faq-troubleshooting' },
-      ],
+        text: 'Magic Spend',
+        collapsed: true,
+        items: [
+            {
+                text: 'Quickstart',
+                items: [
+                    { text: 'Quickstart Guide', link: '/wallet-tools/magic-spend/quickstart-guide' },
+                ],
+            },
+            {
+                text: 'Introduction',
+                items: [
+                    { text: 'Introduction 1', link: '/wallet-tools/magic-spend/introduction-1' },
+                ],
+            },
+            {
+                text: 'Tutorials',
+                items: [
+                    { text: 'Tutorial 1', link: '/wallet-tools/magic-spend/tutorials/tutorial-1' },
+                ],
+            },
+            {
+                text: 'Documentation',
+                items: [
+                    { text: 'Documentation 1', link: '/wallet-tools/magic-spend/documentation/documentation-1' },
+                ],
+            },
+            {
+                text: 'FAQ & Troubleshooting',
+                items: [
+                    { text: 'FAQ & Troubleshooting 1', link: '/wallet-tools/magic-spend/faq-troubleshooting/faq-troubleshooting-1' },
+                ],
+            },
+        ]
     },
+    {
+        text: 'Support & Contribution', 
+        collapsed: true,
+        items: [
+            { text: 'Support & Contribution 1', link: '/wallet-tools/support-contribution/support-contribution-1' },
+        ],
+    }
   ],
   '/chain-tools/paymaster/': [
     {
