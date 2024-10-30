@@ -1,5 +1,6 @@
 import { defineConfig } from 'vocs'
 import { sidebar } from './sidebar.ts'
+import { ModuleKind, ModuleResolutionKind } from 'typescript'
 
 
 const baseConfig = {
@@ -20,6 +21,17 @@ const baseConfig = {
 // used for global dismissable announcements, etc
 const bannerConfig = {
   banner: "Welcome to Base Docs", 
+}
+
+const twoslashConfig = {
+  twoslash: {
+    compilerOptions: {
+      allowUmdGlobalAccess: true,
+      esModuleInterop: true,
+      module: ModuleKind.NodeNext, //ModuleKind.Preserve
+      moduleResolution: ModuleResolutionKind.NodeNext,
+    },
+  }
 }
 
 const sidebarConfig = {
@@ -125,6 +137,7 @@ export default defineConfig({
   ...markdownConfig,
   ...pluggableConfig,
   ...searchConfig,
+  ...twoslashConfig,
 })
 
 /* Differences from Docusaurus

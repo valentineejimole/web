@@ -57,17 +57,27 @@ export const sidebar: Sidebar = {
                 text: 'Introduction',
                 items: [
                     { text: 'Why OnchainKit?', link: '/app-tools/onchainkit/introduction' },
-                    { text: 'Tutorials', link: '/app-tools/onchainkit/tutorials' },
-                    { text: 'Templates', link: '/app-tools/onchainkit/templates' },
-                    { text: 'Documentation', link: '/app-tools/onchainkit/documentation' },
-                    { text: 'FAQ & Troubleshooting', link: '/app-tools/onchainkit/faq-troubleshooting' },
-                    { text: 'Support & Contribution', link: '/app-tools/onchainkit/support-contribution' },
                 ],
             },
             {
                 text: 'Tutorials',
                 items: [
-                    { text: 'Tutorial 1', link: '/app-tools/onchainkit/tutorials/tutorial-1' },
+                    {
+                      text: 'Lifecycle Status',
+                      link: '/app-tools/onchainkit/tutorials/lifecycle-status',
+                    },
+                    {
+                      text: 'Tailwind CSS Integration',
+                      link: '/app-tools/onchainkit/tutorials/tailwind',
+                    },
+                    {
+                      text: 'Theme Customization',
+                      link: '/app-tools/onchainkit/tutorials/themes',
+                    },
+                    {
+                      text: 'Use Basename',
+                      link: '/app-tools/onchainkit/tutorials/use-basename-in-onchain-app',
+                    },
                 ],
             },
             {
@@ -91,7 +101,7 @@ export const sidebar: Sidebar = {
             {
                 text: 'Support & Contribution',
                 items: [
-                    { text: 'Support & Contribution 1', link: '/app-tools/onchainkit/support-contribution/support-contribution-1' },
+                    { text: 'How to Contribute', link: '/app-tools/onchainkit/support-contribution/contribution' },
                 ],
             },
         ],
