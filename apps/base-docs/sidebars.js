@@ -1,12 +1,13 @@
 module.exports = {
   gettingStartedSidebar: [
     {
+      type: 'doc',
+      id: 'getting-started/index',
+    },
+    {
       type: 'category',
       label: 'Quickstart',
-      items: [
-        'getting-started/deploy-on-base-quickstart',
-        'getting-started/onchainkit-quickstart',
-      ],
+      items: ['getting-started/deploy-on-base-quickstart', 'getting-started/onchainkit-quickstart'],
     },
     {
       type: 'category',
@@ -21,20 +22,19 @@ module.exports = {
     {
       type: 'category',
       label: 'Get Setup',
-      items: [
-        'getting-started/setting-up-your-dev-environment',
-        'getting-started/docs-tour',
-      ],
+      items: ['getting-started/setting-up-your-dev-environment', 'getting-started/docs-tour'],
     },
     {
       type: 'category',
       label: 'Migrating to Base',
-      items: [
-        'getting-started/to-be-built',
-      ],
+      items: ['getting-started/to-be-built'],
     },
   ],
   appToolsSidebar: [
+    {
+      type: 'doc',
+      id: 'app-tools/index',
+    },
     {
       type: 'category',
       label: 'OnchainKit',
@@ -42,9 +42,7 @@ module.exports = {
         {
           type: 'category',
           label: 'Quickstart Guide',
-          items: [
-            'app-tools/onchainkit/getting-started',
-          ],
+          items: ['app-tools/onchainkit/getting-started'],
         },
         'app-tools/onchainkit/introduction',
         {
@@ -62,9 +60,7 @@ module.exports = {
         {
           type: 'category',
           label: 'Templates',
-          items: [
-            'app-tools/onchainkit/existing-templates',
-          ],
+          items: ['app-tools/onchainkit/existing-templates'],
         },
         {
           type: 'category',
@@ -79,17 +75,12 @@ module.exports = {
         {
           type: 'category',
           label: 'FAQ & Troubleshooting',
-          items: [
-            'app-tools/onchainkit/to-be-built',
-          ],
+          items: ['app-tools/onchainkit/to-be-built'],
         },
         {
           type: 'category',
           label: 'Support & Contribution',
-          items: [
-            'app-tools/onchainkit/how-to-contribute',
-            'app-tools/onchainkit/report-a-bug',
-          ],
+          items: ['app-tools/onchainkit/how-to-contribute', 'app-tools/onchainkit/report-a-bug'],
         },
       ],
     },
@@ -111,24 +102,17 @@ module.exports = {
         {
           type: 'category',
           label: 'Documentation',
-          items: [
-            'app-tools/basenames/to-be-built',
-          ],
+          items: ['app-tools/basenames/to-be-built'],
         },
         {
           type: 'category',
           label: 'FAQ & Troubleshooting',
-          items: [
-            'app-tools/basenames/basenames-faq',
-          ],
+          items: ['app-tools/basenames/basenames-faq'],
         },
         {
           type: 'category',
           label: 'Support & Contribution',
-          items: [
-            'app-tools/basenames/how-to-contribute',
-            'app-tools/basenames/report-a-bug',
-          ],
+          items: ['app-tools/basenames/how-to-contribute', 'app-tools/basenames/report-a-bug'],
         },
       ],
     },
@@ -139,9 +123,7 @@ module.exports = {
         {
           type: 'category',
           label: 'Quickstart Guide',
-          items: [
-            'app-tools/verifications/existing-quickstart-on-cdp',
-          ],
+          items: ['app-tools/verifications/existing-quickstart-on-cdp'],
         },
         {
           type: 'category',
@@ -154,29 +136,27 @@ module.exports = {
         {
           type: 'category',
           label: 'Tutorials',
-          items: [
-            'app-tools/verifications/to-be-built',
-          ],
+          items: ['app-tools/verifications/to-be-built'],
         },
         {
           type: 'category',
           label: 'Documentation',
-          items: [
-            'app-tools/verifications/attestations-document',
-          ],
+          items: ['app-tools/verifications/attestations-document'],
         },
         'app-tools/verifications/faq-troubleshooting',
         {
           type: 'category',
           label: 'Support & Contribution',
-          items: [
-            'app-tools/verifications/verifications-discord',
-          ],
+          items: ['app-tools/verifications/verifications-discord'],
         },
       ],
     },
   ],
   walletToolsSidebar: [
+    {
+      type: 'doc',
+      id: 'wallet-tools/index',
+    },
     {
       type: 'category',
       label: 'Wallet SDK',
@@ -184,16 +164,12 @@ module.exports = {
         {
           type: 'category',
           label: 'Quickstart Guide',
-          items: [
-            'wallet-tools/wallet-sdk/wallet-sdk-mobile-sdk',
-          ],
+          items: ['wallet-tools/wallet-sdk/wallet-sdk-mobile-sdk'],
         },
         {
           type: 'category',
           label: 'Introduction',
-          items: [
-            'wallet-tools/wallet-sdk/existing-welcome-page-features',
-          ],
+          items: ['wallet-tools/wallet-sdk/existing-welcome-page-features'],
         },
         {
           type: 'category',
@@ -237,9 +213,7 @@ module.exports = {
         {
           type: 'category',
           label: 'Quickstart Guide',
-          items: [
-            'wallet-tools/smart-wallet/existing-quick-start',
-          ],
+          items: ['wallet-tools/smart-wallet/existing-quick-start'],
         },
         {
           type: 'category',
@@ -272,9 +246,7 @@ module.exports = {
         {
           type: 'category',
           label: 'FAQ & Troubleshooting',
-          items: [
-            'wallet-tools/smart-wallet/existing-faq',
-          ],
+          items: ['wallet-tools/smart-wallet/existing-faq'],
         },
       ],
     },
@@ -285,63 +257,50 @@ module.exports = {
         {
           type: 'category',
           label: 'Quickstart Guide',
-          items: [
-            'wallet-tools/mobile-wallet-protocol/to-be-built',
-          ],
+          items: ['wallet-tools/mobile-wallet-protocol/to-be-built'],
         },
         {
           type: 'category',
           label: 'Introduction',
-          items: [
-            'wallet-tools/mobile-wallet-protocol/existing-overview',
-          ],
+          items: ['wallet-tools/mobile-wallet-protocol/existing-overview'],
         },
         {
           type: 'category',
           label: 'Tutorials',
-          items: [
-            'wallet-tools/mobile-wallet-protocol/to-be-built',
-          ],
+          items: ['wallet-tools/mobile-wallet-protocol/to-be-built'],
         },
         {
           type: 'category',
           label: 'Documentation',
-          items: [
-            'wallet-tools/mobile-wallet-protocol/existing-docs-other-than-overview',
-          ],
+          items: ['wallet-tools/mobile-wallet-protocol/existing-docs-other-than-overview'],
         },
         {
           type: 'category',
           label: 'FAQ & Troubleshooting',
-          items: [
-            'wallet-tools/mobile-wallet-protocol/to-be-built',
-          ],
+          items: ['wallet-tools/mobile-wallet-protocol/to-be-built'],
         },
       ],
     },
   ],
   baseChainSidebar: [
     {
+      type: 'doc',
+      id: 'base-chain/index',
+    },
+    {
       type: 'category',
       label: 'Quickstart Guide',
-      items: [
-        'base-chain/to-be-built',
-      ],
+      items: ['base-chain/to-be-built'],
     },
     {
       type: 'category',
       label: 'Introduction',
-      items: [
-        'base-chain/to-be-built',
-      ],
+      items: ['base-chain/to-be-built'],
     },
     {
       type: 'category',
       label: 'Tutorials',
-      items: [
-        'base-chain/run-a-base-node',
-        'base-chain/bridge-an-l1-token-to-base',
-      ],
+      items: ['base-chain/run-a-base-node', 'base-chain/bridge-an-l1-token-to-base'],
     },
     {
       type: 'category',
@@ -360,19 +319,19 @@ module.exports = {
     {
       type: 'category',
       label: 'FAQ & Troubleshooting',
-      items: [
-        'base-chain/to-be-built',
-      ],
+      items: ['base-chain/to-be-built'],
     },
     {
       type: 'category',
       label: 'Support & Contribution',
-      items: [
-        'base-chain/to-be-built',
-      ],
+      items: ['base-chain/to-be-built'],
     },
   ],
   guidesSidebar: [
+    {
+      type: 'doc',
+      id: 'guides/index',
+    },
     {
       type: 'category',
       label: 'Use Case Guides',
@@ -410,9 +369,7 @@ module.exports = {
         {
           type: 'category',
           label: 'Onboarding',
-          items: [
-            'guides/life-cycle-guides/onboarding/to-be-built',
-          ],
+          items: ['guides/life-cycle-guides/onboarding/to-be-built'],
         },
         {
           type: 'category',
@@ -437,16 +394,12 @@ module.exports = {
         {
           type: 'category',
           label: 'Retaining',
-          items: [
-            'guides/life-cycle-guides/retaining/create-email-campaigns',
-          ],
+          items: ['guides/life-cycle-guides/retaining/create-email-campaigns'],
         },
         {
           type: 'category',
           label: 'Monetizing',
-          items: [
-            'guides/life-cycle-guides/monetizing/to-be-built',
-          ],
+          items: ['guides/life-cycle-guides/monetizing/to-be-built'],
         },
       ],
     },
@@ -517,9 +470,7 @@ module.exports = {
         {
           type: 'category',
           label: 'Token Gating',
-          items: [
-            'guides/general-development-guides/token-gating/gate-irl-events-with-nouns',
-          ],
+          items: ['guides/general-development-guides/token-gating/gate-irl-events-with-nouns'],
         },
         {
           type: 'category',

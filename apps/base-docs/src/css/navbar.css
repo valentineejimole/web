@@ -112,7 +112,7 @@
   display: none;
 }
 
-@media (max-width: 996px) {
+@media (max-width: 1160px) {
   .navbar-sidebar__items .navbar__item,
   .navbar-sidebar__items .dropdown__link {
     display: block !important;
@@ -121,5 +121,47 @@
     font-size: var(--body-font-size);
     line-height: var(--body-line-height);
     font-weight: var(--body-font-weight);
+  }
+}
+
+/* Target only the second .navbar__inner instance using general sibling selector */
+.navbar__inner + .navbar__inner .navbar__items {
+  gap: 28px; /* Default gap */
+}
+
+.navbar__inner + .navbar__inner .navbar__item,
+.navbar__inner + .navbar__inner .navbar__link,
+.navbar__inner + .navbar__inner .dropdown__link {
+  font-size: 14px; /* Desired font size */
+}
+
+/* Breakpoint for screens below 1270px */
+@media (max-width: 1340px) {
+  .navbar__inner + .navbar__inner .navbar__items {
+    gap: 20px;
+  }
+
+  .navbar__inner + .navbar__inner .navbar__item,
+  .navbar__inner + .navbar__inner .navbar__link,
+  .navbar__inner + .navbar__inner .dropdown__link {
+    font-size: 12px;
+  }
+
+  .navbar__inner + .navbar__inner .navbar__items--right > .navbar__item,
+  .navbar__inner + .navbar__inner .navbar__items--right > .dropdown > .navbar__link {
+    font-size: 12px;
+  }
+}
+
+/* Override for bottom right items */
+.navbar__inner:nth-child(2) .navbar__items--right > .navbar__item,
+.navbar__inner:nth-child(2) .navbar__items--right > .dropdown > .navbar__link {
+  font-size: 14px !important;
+}
+
+@media (max-width: 1270px) {
+  .navbar__inner:nth-child(2) .navbar__items--right > .navbar__item,
+  .navbar__inner:nth-child(2) .navbar__items--right > .dropdown > .navbar__link {
+    font-size: 12px !important;
   }
 }
