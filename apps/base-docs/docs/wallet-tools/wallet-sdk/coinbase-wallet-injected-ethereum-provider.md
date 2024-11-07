@@ -1,0 +1,1 @@
+# Coinbase Wallet Injected Ethereum Provider 
