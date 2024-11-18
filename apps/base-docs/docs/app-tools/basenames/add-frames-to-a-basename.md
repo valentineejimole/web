@@ -1,97 +1,108 @@
 ---
-title: Add Frames to a Basename
-description: Learn how to add Farcaster Frames to your Basename profile
-keywords: [Base, Basenames, Farcaster Frames, onchain profiles]
-hide_table_of_contents: true
+title: 'Add Frames to A Basename'
+slug: /add-frames-to-basename
+description: Learn how to customize your Basename by adding Frames, showcasing dynamic content with ease on Base.
+author: hughescoin
+keywords:
+  [
+    Sponsored Transactions,
+    Onchain,
+    Coinbase,
+    Base,
+    Crypto,
+    Cloud Platform,
+    Basenames,
+    Frames,
+    Profile Customization,
+    Open Graph,
+    ENS,
+  ]
+tags: ['account abstraction', 'Paymaster']
+difficulty: easy
+hide_table_of_contents: false
+displayed_sidebar: null
 ---
 
-# Add Frames to a Basename
+# Add Frames to A Basename
 
-Enhance your Basename profile with Farcaster Frames to create more engaging and interactive experiences for your visitors. Frames allow you to embed rich content directly onto your Basename profile, enabling a dynamic representation of your onchain identity.
+Welcome to the exciting world of Frames for your Basename! This tutorial will guide you step-by-step through adding a frame to your Basename, allowing you to personalize and display unique content on the Base.
 
-## Overview
+## What Are Frames?
 
-Frames are interactive elements that can be added to your Basename profile, allowing you to showcase content such as images, videos, links, and more. By incorporating Frames, you can provide a more personalized and visually appealing profile for users interacting with your Basename.
+Frames are dynamic visual elements that display custom content on your Basename using any [Open Graph spec] extensions. You may be familiar with frames from platforms like [Warpcast], where they are used to enhance social interactions like minting NFTs onchain, sharing information, and more. Open Frames work similarly, but they are independent of Warpcast and are the best way for adding frames to your Basename. With Open Frames, anyone can create and display content directly on their Basename.
 
 ## Prerequisites
 
-Before adding Frames to your Basename, ensure you have the following:
+Before you begin, ensure you have the following:
 
-- A registered Basename
-- Basic understanding of Farcaster Frames
-- A development environment set up with Node.js
+- A registered Basename. If you do not have one, [claim a basename](https://www.base.org/names) now.
+- A small amount of ETH to submit the text record onchain
 
-## Adding a Frame
+## Navigate to Your Basename
 
-Follow these steps to add a Farcaster Frame to your Basename profile:
+To get started, head over to a Basename that you own. For example:
 
-1. **Access the Basenames Interface:**
+`https://www.base.org/name/devrel`
 
-   Navigate to the [Basenames Interface](https://base.org/names) and log in with your wallet.
+![basenames-profile-homepage](../../assets/images/basenames-tutorial/basenames-homepage.png)
 
-2. **Edit Your Basename Profile:**
+## Look for the Frame Banner
 
-   Select the Basename you wish to enhance and click on the "Edit Profile" button.
+Once you're on your profile, you’ll be greeted with a new banner inviting you to pin a frame to your profile. Look for the call-to-action button and click `Try it now`.
 
-3. **Add a New Frame:**
+![try-now-buton](../../assets/images/basenames-tutorial/try-now.png)
 
-   - Click on "Add Frame."
-   - Choose the type of content you want to embed (e.g., Image, Video, Link).
-   - Enter the necessary details for the frame, such as the URL or upload the media file.
+## Explore the Frame Selection Panels
 
-4. **Customize the Frame:**
+You'll now see two panels to help you choose and preview frames for your profile. The left panel contains pre-built frames created by the Base community, while the right panel allows you to preview how the selected frame will look on your Basenames profile.
 
-   Adjust the size, position, and other visual aspects of the Frame to fit your profile's design aesthetic.
+![frame-selector-page](../../assets/images/basenames-tutorial/frames-selector.png)
 
-5. **Save Changes:**
+## Choose a Frame
 
-   After configuring the Frame, click "Save" to apply the changes to your Basename profile.
+You can select any frame from the available options. For this tutorial, we’ll use the pre-built "Pay Me" Frame by [Paycaster](https://paycaster.co/), which allows anyone to gift you USDC or ETH.
 
-## Testing Your Frame
+Click on the dropdown menu to select the "Pay Me" Frame.
 
-To ensure your Frame displays correctly:
+![frame-payme-](../../assets/images/basenames-tutorial/show-preview.png)
 
-1. **View Your Profile:**
+## Preview the Frame
 
-   Refresh your Basename profile on the [Basenames Interface](https://base.org/names) to see the newly added Frame.
+Once you've selected the frame, click on the `Show preview` button to see how it will appear on your profile.
 
-2. **Interact with the Frame:**
+![Frame-preview](../../assets/images/basenames-tutorial/frame-preview.png)
 
-   Click or hover over interactive elements to verify functionality and responsiveness.
+## Add the Frame to Your Profile
 
-3. **Adjust as Needed:**
+If you're happy with the preview, it's time to add the frame to your profile! Click the `Add frame` button.
 
-   If the Frame doesn't appear as intended, return to the "Edit Profile" section to make necessary adjustments.
+You'll be prompted to confirm the transaction in your wallet. Approve the transaction, and the page will automatically reload.
 
-## Best Practices
+![confirm-txn](../../assets/images/basenames-tutorial/confirm-txn.png)
 
-- **Consistency:** Ensure all Frames align with your brand or personal identity for a cohesive look.
-- **Performance:** Optimize media files to reduce load times and enhance user experience.
-- **Accessibility:** Use descriptive text for media content to support users with disabilities.
-- **Security:** Only embed content from trusted sources to maintain the integrity of your profile.
+## View Your Updated Profile
 
-## Examples
+After the page reloads, you’ll see your profile with the newly added frame. Congratulations! You’ve successfully added a frame to your Basenames profile.
 
-Here are some examples of enhanced Basename profiles with Frames:
+![profile](../../assets/images/basenames-tutorial/basenames-frame-final.png)
 
-- **Professional Portfolio:**
+Feel free to customize your Frames further or explore new designs from the community!
 
-  Embed project showcases, resume links, and contact forms.
+## Resources
 
-- **Creative Showcase:**
+For more information on Frames and how to customize them, check out the following resources:
 
-  Include galleries of artwork, music files, and video clips.
-
-- **Social Media Integration:**
-
-  Link to Twitter feeds, GitHub repositories, and personal blogs.
-
-## Additional Resources
-
-- [Farcaster Frames Documentation](https://docs.farcaster.xyz/frames)
-- [OnchainKit Integration Guide](https://docs.base.org/docs/app-tools/onchainkit)
-- [Base Smart Wallet Documentation](https://docs.base.org/docs/wallet-tools/smart-wallet)
+- [Open Frames Spec](https://www.openframes.xyz/#required-properties)
+- [Frames Debugger](https://debugger.framesjs.org/)
+- [Openframes Website](https://www.openframes.xyz/)
+- [Open Graph spec](https://ogp.me/)
+- [Warpcast](https://warpcast.com/)
 
 ---
 
-For further assistance, join our [Discord Community](https://discord.com/invite/base) or contact our support team at [support@base.org](mailto:support@base.org).
+[Open Frames Spec]: https://www.openframes.xyz/#required-properties
+[Open Frames]: https://www.openframes.xyz/
+[Frames Debugger]: https://debugger.framesjs.org/
+[Openframes Website]: https://www.openframes.xyz/
+[Open Graph spec]: https://ogp.me/
+[Warpcast]: https://warpcast.com/

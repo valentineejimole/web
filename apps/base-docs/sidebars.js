@@ -118,6 +118,34 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Paymaster',
+      items: [
+        'app-tools/paymaster/quickstart-guide',
+        'app-tools/paymaster/introduction',
+        {
+          type: 'category',
+          label: 'Tutorials',
+          items: ['app-tools/paymaster/gassless-transactions-with-paymaster'],
+        },
+        {
+          type: 'category',
+          label: 'Documentation',
+          items: ['app-tools/paymaster/to-be-built'],
+        },
+        {
+          type: 'category',
+          label: 'FAQ & Troubleshooting',
+          items: ['app-tools/paymaster/basenames-faq'],
+        },
+        {
+          type: 'category',
+          label: 'Support & Contribution',
+          items: ['app-tools/paymaster/how-to-contribute', 'app-tools/paymaster/report-a-bug'],
+        },
+      ],
+    },
+    {
+      type: 'category',
       label: 'Verifications',
       items: [
         {
@@ -341,7 +369,8 @@ module.exports = {
           label: 'Finance',
           items: [
             'guides/use-case-guides/finance/build-a-smart-wallet-funding-app',
-            'guides/use-case-guides/finance/access-real-time-asset-data',
+            'guides/use-case-guides/finance/access-real-world-data-chainlink',
+            'guides/use-case-guides/finance/access-real-time-asset-data-pyth-price-feeds',
           ],
         },
         {
@@ -451,6 +480,8 @@ module.exports = {
               items: [
                 'guides/general-development-guides/smart-contract-development/thirdweb/deploy-with-thirdweb',
                 'guides/general-development-guides/smart-contract-development/thirdweb/build-with-thirdweb',
+                'guides/general-development-guides/smart-contract-development/thirdweb/thirdweb-sdk',
+                'guides/general-development-guides/smart-contract-development/thirdweb/thirdweb-cli',
               ],
             },
             'guides/general-development-guides/smart-contract-development/verify-contract-with-basescan',
@@ -462,10 +493,16 @@ module.exports = {
           label: 'NFTs',
           items: [
             'guides/general-development-guides/nfts/simple-onchain-nfts',
+            'guides/general-development-guides/nfts/dynamic-nfts',
             'guides/general-development-guides/nfts/complex-onchain-nfts',
             'guides/general-development-guides/nfts/signature-mint',
             'guides/general-development-guides/nfts/thirdweb-unreal-nft-items',
           ],
+        },
+        {
+          type: 'category',
+          label: 'IPFS',
+          items: ['guides/general-development-guides/IPFS/deploy-with-fleek'],
         },
         {
           type: 'category',
@@ -493,8 +530,7 @@ module.exports = {
           label: 'Cross-Chain',
           items: [
             'guides/general-development-guides/cross-chain/bridge-tokens-with-layerzero',
-            'guides/general-development-guides/cross-chain/bridge-tokens-with-axelar',
-            'guides/general-development-guides/cross-chain/bridge-tokens-with-hyperlane',
+            'guides/general-development-guides/cross-chain/send-messages-and-tokens-from-base-chainlink',
           ],
         },
       ],
