@@ -44,19 +44,19 @@ To get started, head over to a Basename that you own. For example:
 
 `https://www.base.org/name/devrel`
 
-![basenames-profile-homepage](../../assets/images/basenames-tutorial/basenames-homepage.png)
+![basenames-profile-homepage](../../../assets/images/basenames-tutorial/basenames-homepage.png)
 
 ## Look for the Frame Banner
 
 Once you're on your profile, you’ll be greeted with a new banner inviting you to pin a frame to your profile. Look for the call-to-action button and click `Try it now`.
 
-![try-now-buton](../../assets/images/basenames-tutorial/try-now.png)
+![try-now-buton](../../../assets/images/basenames-tutorial/try-now.png)
 
 ## Explore the Frame Selection Panels
 
 You'll now see two panels to help you choose and preview frames for your profile. The left panel contains pre-built frames created by the Base community, while the right panel allows you to preview how the selected frame will look on your Basenames profile.
 
-![frame-selector-page](../../assets/images/basenames-tutorial/frames-selector.png)
+![frame-selector-page](../../../assets/images/basenames-tutorial/frames-selector.png)
 
 ## Choose a Frame
 
@@ -64,13 +64,13 @@ You can select any frame from the available options. For this tutorial, we’ll 
 
 Click on the dropdown menu to select the "Pay Me" Frame.
 
-![frame-payme-](../../assets/images/basenames-tutorial/show-preview.png)
+![frame-payme-](../../../assets/images/basenames-tutorial/show-preview.png)
 
 ## Preview the Frame
 
 Once you've selected the frame, click on the `Show preview` button to see how it will appear on your profile.
 
-![Frame-preview](../../assets/images/basenames-tutorial/frame-preview.png)
+![Frame-preview](../../../assets/images/basenames-tutorial/frame-preview.png)
 
 ## Add the Frame to Your Profile
 
@@ -78,13 +78,13 @@ If you're happy with the preview, it's time to add the frame to your profile! Cl
 
 You'll be prompted to confirm the transaction in your wallet. Approve the transaction, and the page will automatically reload.
 
-![confirm-txn](../../assets/images/basenames-tutorial/confirm-txn.png)
+![confirm-txn](../../../assets/images/basenames-tutorial/confirm-txn.png)
 
 ## View Your Updated Profile
 
 After the page reloads, you’ll see your profile with the newly added frame. Congratulations! You’ve successfully added a frame to your Basenames profile.
 
-![profile](../../assets/images/basenames-tutorial/basenames-frame-final.png)
+![profile](../../../assets/images/basenames-tutorial/basenames-frame-final.png)
 
 Feel free to customize your Frames further or explore new designs from the community!
 

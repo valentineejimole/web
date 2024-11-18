@@ -51,7 +51,7 @@ Create a new repo using [a-frame-in-100-lines] as a template.
 
 Add your new repo to Vercel and deploy. If you need a refresher, check out [deploying with Vercel]. Open the [Frame Validator] and test the current version of the template.
 
-![100 Lines](../../assets/images/frames/updated-100-lines.png)
+![100 Lines](../../../../assets/images/frames/updated-100-lines.png)
 
 The demo has examples of most of the features available for your frames.
 
@@ -63,7 +63,7 @@ The core functionality of a frame is an image and at least 1 button. Buttons can
 
 Optionally, frames can include a text entry field. Try it out! When you click the `Story Time!` button, the text will be preserved, and will appear in the button on the next frame.
 
-![Story Time](../../assets/images/frames/story-time.png)
+![Story Time](../../../../assets/images/frames/story-time.png)
 
 The text input field is created by adding the `input` property to `getFrameMetadata`.
 

@@ -62,7 +62,7 @@ Follow the instructions to spin up a new app. Using the [wagmi template], pick:
 
 Run `pnpm install` then `pnpm run dev` to start the site. First, open it with your regular browser. If you have a wallet browser extension installed, you'll see two buttons to connect:
 
-![Two Buttons](../../assets/images/smart-wallet/wagmi-template-normal.png)
+![Two Buttons](../../../assets/images/smart-wallet/wagmi-template-normal.png)
 
 The reason is that the `wagmi` template maps all the connectors it can detect to a button on the page. In this case, it has both the injected provider from your browser extension, and the Smart Wallet provider you added doing the setup steps. You'll fix this UX quirk shortly.
 
@@ -78,7 +78,7 @@ Select any of the options to create a new passkey.
 
 That's it, you've created a new wallet and logged into your app!
 
-![Create a passkey](../../assets/images/smart-wallet/create-a-passkey.png)
+![Create a passkey](../../../assets/images/smart-wallet/create-a-passkey.png)
 
 The next time you try this, the app will automatically log you in. If you want to create a new wallet, use the `Disconnect` button, then the `Coinbase Wallet Button`, then click the gear and log out of the wallet.
 
@@ -183,7 +183,7 @@ Find your App Id by going to [Project Settings]. It's listed as `Project ID`.
 
 Once you have that, you can use the _One Click_ pay feature to set up a transaction that will allow the user to use their Coinbase retail account to easily fund their new wallet. These funds will be available for them to use on **any** app on Base that uses the Smart Wallet.
 
-![One Click Pay](../../assets/images/smart-wallet/one-click-pay.png)
+![One Click Pay](../../../assets/images/smart-wallet/one-click-pay.png)
 
 To add this, first add a helper function to build the link:
 
@@ -372,7 +372,7 @@ Test it with your normal wallet. Everything should work as expected. Now, test i
 
 Not only does the transaction work in a way that's easy for new users, but for a currently, Base is automatically sponsoring transactions done through the Smart Wallet (**on testnet only)**.
 
-![Smart Wallet Tx](../../assets/images/smart-wallet/sponsored-by-base.png)
+![Smart Wallet Tx](../../../assets/images/smart-wallet/sponsored-by-base.png)
 
 But you can also get **thousands of dollars of gas sponsorship** with a few setup steps during the [Base Gasless Campaign]. Also check out the [Paymaster] docs to see how to sponsor gas beyond this.
 

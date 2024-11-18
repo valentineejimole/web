@@ -162,7 +162,7 @@ export default function Page() {
 }
 ```
 
-![Install Action](../../assets/images/frames/install-action.png)
+![Install Action](../../../../assets/images/frames/install-action.png)
 
 ### From a Frame
 

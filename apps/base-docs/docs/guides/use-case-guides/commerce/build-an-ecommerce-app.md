@@ -50,15 +50,15 @@ Let's first start by getting started by creating a product on Coinbase Commerce.
 
 To begin integrating Coinbase Commerce payments, you'll need to set up your account and create a product. Start by logging into your Coinbase Commerce account. Once you're in, navigate to the [product creation page].
 
-![pay-commerce-uuid](../../assets/images/onchainkit-tutorials/pay-commerce-products.png)
+![pay-commerce-uuid](../../../../assets/images/onchainkit-tutorials/pay-commerce-products.png)
 
 Here, you'll need to add a detailed description of the product or service you're offering. After filling in the necessary information, click on the `Create product` button.
 
-![pay-commerce-uuid](../../assets/images/onchainkit-tutorials/pay-create-product-details.png)
+![pay-commerce-uuid](../../../../assets/images/onchainkit-tutorials/pay-create-product-details.png)
 
 Once your product is created you will be presented with a small popup that contains a link to your products hosted page. Click on the `View product` button. This will take you to a page with more details about your newly created product. Pay close attention to the URL of this page, as it contains a crucial piece of information: the product's UUID. You'll need to copy this UUID from the URL.
 
-![pay-commerce-uuid](../../assets/images/onchainkit-tutorials/pay-copy-product-link.png)
+![pay-commerce-uuid](../../../../assets/images/onchainkit-tutorials/pay-copy-product-link.png)
 
 Finally, for security and ease of use in your development process, it's recommended to store this UUID as an environment variable in your project's `.env` file. This setup will allow you to securely reference your product when implementing the payment integration in your application.
 
@@ -194,7 +194,7 @@ Finally, configure the Pay component within your JSX. Wrap the `PayButton` and `
 
 You may now test your implementation locally by running `bun run dev`
 
-![pay-commerce-uuid](../../assets/images/onchainkit-tutorials/pay-final-product.png)
+![pay-commerce-uuid](../../../../assets/images/onchainkit-tutorials/pay-final-product.png)
 
 ## Conclusion
 

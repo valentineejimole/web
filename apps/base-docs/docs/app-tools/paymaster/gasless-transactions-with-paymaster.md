@@ -1,6 +1,6 @@
 ---
 title: 'Gasless Transactions on Base using a Paymaster'
-slug: /gasless-transaction-on-base-using-a-paymaster
+slug: /gasless-transaction-wtih-paymaster
 description: Learn how to leverage the Base Paymaster for seamless, gasless transactions on the Coinbase Cloud Developer Platform.
 author: hughescoin
 keywords:
@@ -60,15 +60,15 @@ Navigate to the [Coinbase Developer Platform]:
 
 Create or select your project of choice from the upper left corner of your screen.
 
-![cdp-home.png](../../assets/images/gasless-transaction-on-base/cdp-select-project.png)
+![cdp-home.png](../../../assets/images/gasless-transaction-on-base/cdp-select-project.png)
 
 Click on the `Paymaster` tool on the left navigation:\*\* [Paymaster Tool]
 
-![cdp-paymaster-tool.png](../../assets/images/gasless-transaction-on-base/cdp-paymaster.png)
+![cdp-paymaster-tool.png](../../../assets/images/gasless-transaction-on-base/cdp-paymaster.png)
 
 Click on `Configuration` at the top of the screen
 
-![cdp-paymaster-tool.png](../../assets/images/gasless-transaction-on-base/cdp-config.png)
+![cdp-paymaster-tool.png](../../../assets/images/gasless-transaction-on-base/cdp-config.png)
 
 Save the RPC URL to your paymaster to your clipboard. You will need it in your `index.js` file in a later step.
 
@@ -80,7 +80,7 @@ Select **Base Mainnet**
 
 From the configuration page, select `Base Mainnet` from the dropdown menu. Then, enable your paymaster by clicking on the toggle button to the right of the screen.
 
-![cdp-project-selection.png](../../assets/images/gasless-transaction-on-base/cdp-select-project.png)
+![cdp-project-selection.png](../../../assets/images/gasless-transaction-on-base/cdp-select-project.png)
 
 Allowlist the NFT contract and the mintTo functions:
 
@@ -90,7 +90,7 @@ Add the following contract: [`0x83bd615eb93eE1336acA53e185b03B54fF4A17e8`](https
 
 Put `mintTo(address)` as the function to allowlist then click `Save` at the bottom of the page.
 
-![cdp-allowlist-contracts.png](../../assets/images/gasless-transaction-on-base/cdp-allowlist-contract.png)
+![cdp-allowlist-contracts.png](../../../assets/images/gasless-transaction-on-base/cdp-allowlist-contract.png)
 
 :::note Use your own contract
 You will be using this [simple NFT contract]deployed on Base mainnet for our example. Feel free to use a contract of your choice.
@@ -116,7 +116,7 @@ This setting allows you to define the maximum amount of gas or USD that can be s
 
 Set your global policy to be `$.07` by entering the amount in the text field and clicking the `Save` button.
 
-![cdp-allowlist-contracts.png](../../assets/images/gasless-transaction-on-base/cdp-global-user-limits.png)
+![cdp-allowlist-contracts.png](../../../assets/images/gasless-transaction-on-base/cdp-global-user-limits.png)
 
 ## Test Your Paymaster policy
 

@@ -57,7 +57,7 @@ The name of this site is a little misleading. It will treat the DAOs you create 
 
 Click the green circle in the upper right, and select `Create a DAO`
 
-![Create DAO](../../assets/images/build-with-nouns/create-dao.png)
+![Create DAO](../../../../assets/images/build-with-nouns/create-dao.png)
 
 ### General
 
@@ -97,7 +97,7 @@ Click `Deploy Contracts (2 of 2)` and approve the transaction. After it processe
 
 If you chose to distribute tokens to founding addresses, those will be airdropped to those addresses. Otherwise, use the auction to purchase NFTs with a few different addresses.
 
-![Auction](../../assets/images/build-with-nouns/auction.png)
+![Auction](../../../../assets/images/build-with-nouns/auction.png)
 
 ### Finding the Contracts
 

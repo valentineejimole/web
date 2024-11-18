@@ -14,7 +14,7 @@ displayed_sidebar: null
 
 In this tutorial, you'll learn how to add NFT item usage on top of the demo game you build in their [Unreal Engine Quickstart]. Specifically, you'll use an NFT collection of random colors to change the color of the player's race car.
 
-![Color changing car nft](../../assets/images/build-with-thirdweb/car-color-nft.gif)
+![Color changing car nft](../../../../assets/images/build-with-thirdweb/car-color-nft.gif)
 
 ---
 
@@ -106,7 +106,7 @@ We do not have an official browser recommendation, but during our testing, Chrom
 
 Navigate to the [thirdweb engine dashboard], and click the `Import` button. Enter a name and the local address for your engine instance:
 
-![Add engine instance](../../assets/images/build-with-thirdweb/import-image-instance.png)
+![Add engine instance](../../../../assets/images/build-with-thirdweb/import-image-instance.png)
 
 Next, you must add your wallet to the engine instance. Open up the instance in the dashboard, then click the `Import` button next to `Backend Wallets`. Enter your secret key for the wallet.
 
@@ -184,7 +184,7 @@ If later in the tutorial, you get an error when you attempt to claim a token, bu
 
 Copy the address from the dashboard:
 
-![Token Airdrop Dashboard](../../assets/images/build-with-thirdweb/token-airdrop-dashboard.png)
+![Token Airdrop Dashboard](../../../../assets/images/build-with-thirdweb/token-airdrop-dashboard.png)
 
 Return to the `.env` for your server, and add:
 
@@ -199,21 +199,21 @@ Run the client and server with `yarn client` and `yarn server`. Navigate to `loc
 
 Clone the thirdweb [Unreal Demo], and open it with the Unreal Editor. Do so by clicking the `Recent Projects` tab in the upper left, then `Browse`, in the lower right.
 
-![Open Unreal Project](../../assets/images/build-with-thirdweb/open-unreal-project.png)
+![Open Unreal Project](../../../../assets/images/build-with-thirdweb/open-unreal-project.png)
 
 Open the folder cloned from the repo and select `unreal_demo.uproject`. You may need to convert the project to the current version of Unreal. Click the `Open a copy` button.
 
 When the scene loads, double-click `Scene_Game` in the upper-right corner.
 
-![Scene Game](../../assets/images/build-with-thirdweb/scene-game.png)
+![Scene Game](../../../../assets/images/build-with-thirdweb/scene-game.png)
 
 Before you can play, you need to do some config. Scroll down in the `Outliner` until you find `ThirdWebManager`. Click the `Open Thirdweb Manager` button to open the file in your editor.
 
-![Open Thirdweb Manager](../../assets/images/build-with-thirdweb/open-thirdweb-manager.png)
+![Open Thirdweb Manager](../../../../assets/images/build-with-thirdweb/open-thirdweb-manager.png)
 
 Then, click the green play button at the top of the viewport.
 
-![Play Button](../../assets/images/build-with-thirdweb/play-button.png)
+![Play Button](../../../../assets/images/build-with-thirdweb/play-button.png)
 
 Log in using the credentials you created on the website, and play the game for a minute or two. If you get a 404, check that your engine, client, and server are all still running.
 
@@ -304,7 +304,7 @@ router.post('/claim-random-color-nft', claimRandomColorNFT);
 
 Return to the Unreal Editor and open `ThirdwebManager.cpp`:
 
-![Open ThirdwebManager.cpp](../../assets/images/build-with-thirdweb/open-thirdweb-manager.png).
+![Open ThirdwebManager.cpp](../../../../assets/images/build-with-thirdweb/open-thirdweb-manager.png).
 
 Similarly to what you did in the server, use the existing `PerformClaim()` as a template to add a function for `PerformNFTClaim()`. The only thing different is the name of the function and the URL:
 
@@ -334,7 +334,7 @@ Open the `Content Drawer` at the bottom, search for `CollectibleNFT`, and drag o
 
 Find the `Perform Claim` function call and replace it with `Perform NFT Claim`. **Note** that the `Target` is passed from `Get Actor of Class`.
 
-![Perform NFT Claim](../../assets/images/build-with-thirdweb/perform-nft-claim.png)
+![Perform NFT Claim](../../../../assets/images/build-with-thirdweb/perform-nft-claim.png)
 
 You'll want to be able to tell this collectible apart, so click on the mesh for `Collectible` on the left side in the `Component` tree, then on the `Details` panel on the right, find the `Materials` section and change it to `MI_Solid_Blue`.
 
@@ -572,7 +572,7 @@ Finally, drag off `Bind Event to OnNFTColorsResponse` and add a `Set Timer by Fu
 
 You should end up with something like this:
 
-![Get NFT Colors](../../assets/images/build-with-thirdweb/get-nft-colors.png)
+![Get NFT Colors](../../../../assets/images/build-with-thirdweb/get-nft-colors.png)
 
 Compile the blueprint then run the game. You should see that last color in the array in the HUD, and you should see the full list printed in the console every two seconds.
 
@@ -616,7 +616,7 @@ Return to `Canvas_HUD` and open the `Graph`. Drag out of the `SetText` node that
 
 Finally, add a `Set Vector Parameter Value`. Select `NFT_MPS` for the collection and `Vector` for the `Parameter Name`. Connect the `Liner Color` output of `Hex String to Color` to the `Parameter Value` input.
 
-![Hex to linear color](../../assets/images/build-with-thirdweb/hex-to-linear-color.png)
+![Hex to linear color](../../../../assets/images/build-with-thirdweb/hex-to-linear-color.png)
 
 Compile, save, and close `Canvas_HUD`. Run the game. Your car will start red, but after the response from the server, it will turn the color of your last NFT! Drive and collect the NFT collectible, and it will change colors!
 

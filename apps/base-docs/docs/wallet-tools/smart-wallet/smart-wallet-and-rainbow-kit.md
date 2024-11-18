@@ -78,13 +78,13 @@ You need to have both the [Coinbase Wallet] and [Coinbase Smart Wallet] for this
 
 Start a new project with the RainbowKit [quick start]. Install dependencies, run the project, and attempt to connect with a browser that has the [Coinbase Wallet] browser extension installed. Clicking on `Coinbase` will automatically connect with your EOA browser extension wallet.
 
-![Default Connection](../../assets/images/smart-wallet/rainbowkit-default.png)
+![Default Connection](../../../assets/images/smart-wallet/rainbowkit-default.png)
 
 What about the smart wallet? Isn't it supposed to work automatically?
 
 It does, but only if the user **does not** have the browser extension installed. Open a private window with extensions disabled and try again. Now, you will be directed to use the smart wallet to log in.
 
-![Default Connection](../../assets/images/smart-wallet/rainbow-smart-wallet.png)
+![Default Connection](../../../assets/images/smart-wallet/rainbow-smart-wallet.png)
 As mentioned above, this experience isn't bad for users of one type of wallet or the other, but it makes things difficult for users who are using both types of wallet and may want to choose one or the other when interacting with your app. It also might not be the listing or ordering of wallets you prefer.
 
 ## Customizing the List of Wallets
@@ -155,7 +155,7 @@ export const config = createConfig({
 
 Now, the connection experience contains the wallets in the order you selected!
 
-![Customized wallet list](../../assets/images/smart-wallet/customized-rainbow.png)
+![Customized wallet list](../../../assets/images/smart-wallet/customized-rainbow.png)
 
 ---
 

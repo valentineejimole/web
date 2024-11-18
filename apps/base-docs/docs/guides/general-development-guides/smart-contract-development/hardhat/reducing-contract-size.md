@@ -22,7 +22,7 @@ hide_table_of_contents: false
 displayed_sidebar: null
 ---
 
-import Video from '../../src/components/VideoPlayer/index.jsx'
+import Video from '../../../../../src/components/VideoPlayer/index.jsx'
 
 In this tutorial, you'll learn how to profile and optimize smart contract sizes with Hardhat and the [Hardhat Contract Sizer] plugin.
 

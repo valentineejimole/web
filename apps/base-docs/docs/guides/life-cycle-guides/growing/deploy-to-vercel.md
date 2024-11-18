@@ -90,7 +90,7 @@ Navigate to [Vercel]. Create an account if you need to, then sign in. You'll wan
 
 You should see something like this:
 
-![Install](../../assets/images/frames/vercel-install.png)
+![Install](../../../../assets/images/frames/vercel-install.png)
 
 Click the `Install` button to install the Vercel app in your Github organization. You'll need to select the appropriate choice for your organization between `All repositories` and `Only selected repositories`.
 
@@ -100,13 +100,13 @@ Click `Install`.
 
 You should see the `Import Git Repository` screen:
 
-![Import](../../assets/images/frames/vercel-import.png)
+![Import](../../../../assets/images/frames/vercel-import.png)
 
 :::info
 
 If you've come back to Vercel after a few months, it may be unclear how to add more repos. To do so, use the `Add New...` dropdown on the projects page to get to the screen above, then click `Adjust GitHub App Permissions ->`. Scroll down in the popup window to find your list of repos to add.
 
-![Vercel Projects](../../assets/images/frames/vercel-projects.png)
+![Vercel Projects](../../../../assets/images/frames/vercel-projects.png)
 
 :::
 
@@ -140,7 +140,7 @@ By default, Vercel sets up CI/CD, so whenever you push a change to your main bra
 
 Make a trivial change to your repo, commit it, and push it. When you do so, you'll see a new build in the _Deployments_ tab:
 
-![New Build](../../assets/images/frames/vercel-build.png)
+![New Build](../../../../assets/images/frames/vercel-build.png)
 
 If it fails, you'll get a fairly comprehensive log explaining what happened. Otherwise, it will automatically deploy!
 
@@ -154,7 +154,7 @@ Open the [Frame Validator] and paste in your link. Viewing a frame from the vali
 
 Click `Load`. You should see:
 
-![Example](../../assets/images/frames/100-lines-frame.png)
+![Example](../../../../assets/images/frames/100-lines-frame.png)
 
 Except it will have the text that you edited!
 

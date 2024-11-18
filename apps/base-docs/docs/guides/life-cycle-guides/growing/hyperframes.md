@@ -50,7 +50,7 @@ You'll also need to create or find a handful of images to use for each frame. AI
 
 Open `app/page.tsx`. Modify the `getFrameMetadata` for the first frame to match the frame in the example.
 
-![First Frame](../../assets/images/frames/first-frame.png)
+![First Frame](../../../../assets/images/frames/first-frame.png)
 
 ```tsx
 const frameMetadata = getFrameMetadata({
@@ -225,7 +225,7 @@ export function getHyperFrame(frame: string, text: string, button: number) {
 You can put the HyperFrames wherever you want and import them into your route. For the sake of simplicity, this demo will simply include them at the top of the route file. Import
 
 ```tsx
-import { addHyperFrame, getHyperFrame } from '../../hyperframes';
+import { addHyperFrame, getHyperFrame } from '../../../../hyperframes';
 ```
 
 To store the HyperFrames, add them to the `Record` type with `addHyperFrame`. To create the frames themselves, use `getFrameHtmlResponse` to build the frame, and add the names of the frames you have created, or will create, to the appropriate button.

@@ -31,17 +31,17 @@ You’ll need to set up an account with [Resend], a service that allows you to s
 
 After creating your Resend account, navigate to the API keys page within your Resend dashboard. Here, you’ll generate a new API key that will be used to authenticate your requests when sending emails from your application. Make sure to store this key securely, as it will be required in later steps.
 
-![image-resend-api-page](../../assets/images/resend-email-campaigns/resend-api-keys.png)
+![image-resend-api-page](../../../../assets/images/resend-email-campaigns/resend-api-keys.png)
 
 Once your WalletConnect account is set up, log in to obtain an API key. This key allows your application to interact with WalletConnect’s services. Navigate to the API keys section in your WalletConnect dashboard, generate a new key, and store it securely.
 
 With your WalletConnect API key in hand, it’s time to create a project within the WalletConnect Cloud.
 
-![image-wc-project-id](../../assets/images/resend-email-campaigns/wc-project-page.png)
+![image-wc-project-id](../../../../assets/images/resend-email-campaigns/wc-project-page.png)
 
 This project will house your integration settings and project-specific credentials. Go to the projects section of your WalletConnect dashboard and create a new project. After creating your WalletConnect project, you’ll be provided with a unique Project ID. Copy this Project ID and keep it handy, as you’ll need it for the upcoming integration steps.
 
-![cdp-home-onchainkit-api](../../assets/images/resend-email-campaigns/ock-dashboard.png)
+![cdp-home-onchainkit-api](../../../../assets/images/resend-email-campaigns/ock-dashboard.png)
 
 You will now set up your development environment.
 
@@ -53,7 +53,7 @@ If you’re planning to integrate Resend into an existing project, feel free to 
 
 To begin, you’ll need to fork the [OnchainKit App template] from GitHub by clicking the green `Use this template` button. This template provides a solid foundation for building onchain applications and will be used as the base for our demo.
 
-![image-create-template](../../assets/images/resend-email-campaigns/ock-use-template.png)
+![image-create-template](../../../../assets/images/resend-email-campaigns/ock-use-template.png)
 
 Once you’ve forked the repository, it’s time to clone it to your local machine. Open your terminal and run the following command, replacing the repository URL with the appropriate one if different:
 
@@ -125,7 +125,7 @@ Once logged in, go to the Projects section of your Vercel dashboard. Click on th
 
 In the next step, Vercel will prompt you to import a Git repository. Click on Import Git Repository and search for the OnchainKit app that you forked earlier. Select the repository to proceed.
 
-![image-of-vercel-project-add](../../assets/images/resend-email-campaigns/vercel-import-project.png)
+![image-of-vercel-project-add](../../../../assets/images/resend-email-campaigns/vercel-import-project.png)
 
 This step connects your GitHub (or other Git provider) account with Vercel, allowing Vercel to pull the code from your repository.
 
@@ -141,7 +141,7 @@ Environment Variables: Before completing the deployment, ensure that your enviro
 
 After the build is complete, Vercel will provide you with a deployment URL. This URL is your live domain, where your application will be hosted. You can visit this URL to see your deployed site in action.
 
-![image-deployed-vercel](../../assets/images/resend-email-campaigns/site-load.png)
+![image-deployed-vercel](../../../../assets/images/resend-email-campaigns/site-load.png)
 
 ## Set up logic and functionality
 
@@ -442,11 +442,11 @@ Open your application in a web browser by navigating to `http://localhost:3000` 
 
 After connecting your wallet, you should see a prompt to join the mailing list. Enter your name and email address in the form provided.
 
-![resend-](../../assets/images/resend-email-campaigns/resend-mailing-list-prompt.png)
+![resend-](../../../../assets/images/resend-email-campaigns/resend-mailing-list-prompt.png)
 
 Once you’ve submitted the form, navigate to your [Resend Audience] dashboard. You should see a new contact with the name and email information you provided while testing on the development server.
 
-![resend-](../../assets/images/resend-email-campaigns/resend-user-subscribed.png)
+![resend-](../../../../assets/images/resend-email-campaigns/resend-user-subscribed.png)
 
 ## Conclusion
 

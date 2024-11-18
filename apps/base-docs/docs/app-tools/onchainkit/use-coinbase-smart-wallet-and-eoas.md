@@ -84,11 +84,11 @@ To bring the world onchain, we'll need to speak in terms people are already comf
 
 The demo app contains sections showing a number of [OnchainKit] components, including the [Wallet]. Click `Log In` in your browser with the Coinbase wallet extension present, select `Coinbase Wallet`, and you'll get the expected experience for an EOA wallet user with the browser extension.
 
-![Default eoa](../../assets/images/smart-wallet/onchainkit-default-eoa.png)
+![Default eoa](../../../assets/images/smart-wallet/onchainkit-default-eoa.png)
 
 Next, open the app in a private browser window with extensions disabled, and try again. This time, you'll get the Smart Wallet experience. If you don't have one already, you can create one now. They're neat!
 
-![Default smart wallet](../../assets/images/smart-wallet/onchainkit-default-smart.png)
+![Default smart wallet](../../../assets/images/smart-wallet/onchainkit-default-smart.png)
 
 ## Customizing the List of Wallets
 
@@ -154,7 +154,7 @@ const connectors = connectorsForWallets(
 
 Try connecting again. You'll see your updated list with the wallets organized to your preference!
 
-![Customized List](../../assets/images/smart-wallet/customized-wallet-list.png)
+![Customized List](../../../assets/images/smart-wallet/customized-wallet-list.png)
 
 ## Tuning the Coinbase Wallet Connection
 

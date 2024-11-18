@@ -125,7 +125,7 @@ module.exports = {
         {
           type: 'category',
           label: 'Tutorials',
-          items: ['app-tools/paymaster/gassless-transactions-with-paymaster'],
+          items: ['app-tools/paymaster/gasless-transactions-with-paymaster'],
         },
         {
           type: 'category',
@@ -135,7 +135,7 @@ module.exports = {
         {
           type: 'category',
           label: 'FAQ & Troubleshooting',
-          items: ['app-tools/paymaster/basenames-faq'],
+          items: ['app-tools/paymaster/paymaster-faq'],
         },
         {
           type: 'category',
@@ -413,7 +413,6 @@ module.exports = {
           type: 'category',
           label: 'Growing',
           items: [
-            'guides/life-cycle-guides/growing/frames',
             'guides/life-cycle-guides/growing/cast-actions',
             'guides/life-cycle-guides/growing/gating-and-redirects',
             'guides/life-cycle-guides/growing/deploy-to-vercel',

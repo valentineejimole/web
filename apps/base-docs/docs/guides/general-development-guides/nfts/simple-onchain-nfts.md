@@ -315,7 +315,7 @@ Write some local tests, then [deploy] and test your contract. It can be very tri
 
 Remember, it can take a few minutes for them to register and add the collection. If the metadata or image don't show up correctly, use [Sepolia Basescan] to pull the `tokenURI` and an online or console base64 decoder to decode and check the json metadata and SVG image.
 
-![Random Color NFT](../../assets/images/smart-wallet/random-color-nft.png)
+![Random Color NFT](../../../../assets/images/smart-wallet/random-color-nft.png)
 
 ## Conclusion
 

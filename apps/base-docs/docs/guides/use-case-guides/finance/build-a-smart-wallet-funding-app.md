@@ -51,7 +51,7 @@ You'll need to set up an account on with [Coinbase Developer Platform (CDP) Acco
 
 If you see a "something went wrong" error message when navigating to pay.coinbase.com, make sure you have "enforce secure initialization" disabled on the [Onramp config page] in Coinbase Developer Platform Dashboard.
 
-![fund-onramp-config](../../assets/images/onchainkit-tutorials/fund-onramp-config.png)
+![fund-onramp-config](../../../../assets/images/onchainkit-tutorials/fund-onramp-config.png)
 :::
 
 ---
@@ -130,7 +130,7 @@ Now that we know the user's balance, we can then have them mint an NFT or prompt
 
 The end state is to show their balance along with the appropriate call to actions like so:
 
-![fund-wallet](../../assets/images/onchainkit-tutorials/fund-wallet-balance.png)
+![fund-wallet](../../../../assets/images/onchainkit-tutorials/fund-wallet-balance.png)
 
 Update your component's return statement with the following code:
 
@@ -163,7 +163,7 @@ return (
 
 Sweet! Now our conditional rendering is in full force. If a user clicks on the `+ Add funds to transact` button they will be given three options for topping up their smart wallet:
 
-![fund-wallet](../../assets/images/onchainkit-tutorials/fund-funding-options.png)
+![fund-wallet](../../../../assets/images/onchainkit-tutorials/fund-funding-options.png)
 
 ## Conclusion
 

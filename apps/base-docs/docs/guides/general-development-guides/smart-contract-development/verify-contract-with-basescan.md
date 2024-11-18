@@ -92,7 +92,7 @@ To deploy our contract you will need a RPC URL to a Base node in order to broadc
 
 Obtain a rpc url from the [Node product] and store the url as an environment variable similar to the private key in the previous step.
 
-![cdp-node](../../assets/images/verify-with-basescan-api/cdp-node-full.png)
+![cdp-node](../../../../assets/images/verify-with-basescan-api/cdp-node-full.png)
 
 Then store it as a environment variable in your terminal:
 
@@ -122,11 +122,11 @@ You will now interact with the [Basescan API]. For this, you need API Keys. Crea
 
 After signing in, navigate to your [Basescan account] then select `API Keys` on the left navigation bar.
 
-![basescan-sidebar](../../assets/images/verify-with-basescan-api/basescan-menu.png)
+![basescan-sidebar](../../../../assets/images/verify-with-basescan-api/basescan-menu.png)
 
 From the [API Key page], click the blue "Add" button to create a new API Key then copy your `API Key Token`
 
-![basescan-api-key-page](../../assets/images/verify-with-basescan-api/basescan-apikey-page-add.png)
+![basescan-api-key-page](../../../../assets/images/verify-with-basescan-api/basescan-apikey-page-add.png)
 
 Save this to your clipboard for the next step.
 

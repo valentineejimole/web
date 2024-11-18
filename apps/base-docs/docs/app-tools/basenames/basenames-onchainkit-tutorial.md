@@ -181,7 +181,7 @@ In this example, once the user connects their wallet, the Basenames component is
 
 That’s it! You’ve successfully integrated Basenames into your wagmi/viem app using OnchainKit. Test your application by connecting a wallet and observing how the Basename is displayed instead of the wallet address.
 
-![how-basenames-looks](../../assets/images/basenames-tutorial/final-basename.png)
+![how-basenames-looks](../../../assets/images/basenames-tutorial/final-basename.png)
 
 [Basenames]: https://www.base.org/names/
 [OnchainKit]: https://onchainkit.xyz/

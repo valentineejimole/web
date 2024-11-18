@@ -62,16 +62,6 @@ const config = {
         sidebarPath: require.resolve('./base-learn/sidebars.js'),
       },
     ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'tutorials',
-        path: 'tutorials',
-        routeBasePath: 'tutorials',
-        sidebarPath: require.resolve('./tutorials/sidebars.js'),
-        breadcrumbs: false,
-      },
-    ],
     'docusaurus-node-polyfills',
     [
       '@docusaurus/plugin-client-redirects',

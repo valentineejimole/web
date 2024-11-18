@@ -27,7 +27,7 @@ displayed_sidebar: null
 
 In this tutorial, you will create a dynamic NFT using Irys's [mutability features].
 
-![Overview](../../assets/images/dynamic-nfts/all-characters.png)
+![Overview](../../../../assets/images/dynamic-nfts/all-characters.png)
 
 Dynamic NFTs are NFTs whose metadata evolves over time. They are commonly used in:
 
@@ -68,7 +68,7 @@ Irys has a pay-once-store-forever model and accepts payment for storage using mu
 
 Data on Irys is permanent and immutable, but you use Irys's [mutability features] to simulate mutability and create dynamic NFTs that evolve based on onchain or offchain actions.
 
-![Overview](../../assets/images/dynamic-nfts/mutable-references.png)
+![Overview](../../../../assets/images/dynamic-nfts/mutable-references.png)
 
 Using Irys's mutability features, you create a single, static URL that is linked to a series of transactions. Then, you can add a new transaction to the series at any time, and the URL will always resolve to the most recent transaction.
 
@@ -141,7 +141,7 @@ irys -w <base-private-key> -t base-eth
 
 ## Uploading the images
 
-![All NFTs](../../assets/images/dynamic-nfts/all-characters.png)
+![All NFTs](../../../../assets/images/dynamic-nfts/all-characters.png)
 
 [Download a zip containing PNGs] for each level, and save them on your local drive.
 
@@ -257,7 +257,7 @@ To mint your NFT in Remix:
 3. Under the `Mint` function, enter the wallet address you want to mint the NFT to and the metadata URL (e.g. `https://gateway.irys.xyz/mutable/94TNg3UUKyZ96Dj8eSo9DVkBiivAz9jT39jjMFeTFvm3`) from the previous step.
 4. Click Transact.
 
-![Image Level 3](../../assets/images/dynamic-nfts/open-sea-mockup.jpg)
+![Image Level 3](../../../../assets/images/dynamic-nfts/open-sea-mockup.jpg)
 
 You can now view the NFT on the [Opensea Testnet].
 
@@ -276,7 +276,7 @@ irys upload metadata-level-2.json \
 
 Return to Opensea and request that it refresh your metadata.
 
-![Image Level 3](../../assets/images/dynamic-nfts/refresh-metadata.png)
+![Image Level 3](../../../../assets/images/dynamic-nfts/refresh-metadata.png)
 
 Give it a few minutes and your updated NFT should be visible.
 

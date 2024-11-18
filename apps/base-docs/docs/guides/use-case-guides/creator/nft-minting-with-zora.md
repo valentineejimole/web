@@ -409,7 +409,7 @@ return (
 
 Test out the app. When you click the button, you should get a transaction to mint the NFT. Finally, open your [Zora Dashboard]. Select `Base` as the network. You'll see your collection, **and** the rewards you've received from Zora for facilitating the creation of the collection and the mint of the NFT!
 
-![Zora Dashboard](../../assets/images/build-with-zora/dashboard.png)
+![Zora Dashboard](../../../../assets/images/build-with-zora/dashboard.png)
 
 ## Conclusion
 

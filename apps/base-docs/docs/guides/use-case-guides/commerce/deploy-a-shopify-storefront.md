@@ -57,7 +57,7 @@ To create one, [sign up](https://beta.commerce.coinbase.com/sign_up) for a busin
 
 ### Link Coinbase Commerce to your Shopify store
 
-![shopify-install-commerce.gif](../../assets/images/shopify-storefront-commerce/shopify-install-commerce.gif)
+![shopify-install-commerce.gif](../../../../assets/images/shopify-storefront-commerce/shopify-install-commerce.gif)
 
 Once, you've created a Coinbase Commerce Managed account you can now add the plugin to your Shopify store.
 

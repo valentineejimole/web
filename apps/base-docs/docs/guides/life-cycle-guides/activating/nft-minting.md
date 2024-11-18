@@ -64,7 +64,7 @@ To cast a frame, you'd simply paste this URL into when you create a cast, and it
 
 But you probably want to use the [Frame Validator] first. Open that up, and paste in your link. Click `Load`. You should see:
 
-![Example](../../assets/images/frames/updated-100-lines.png)
+![Example](../../../../assets/images/frames/updated-100-lines.png)
 
 Click, and the image will change. You'll also see a new set of buttons, demonstrating some of the features available for frame development.
 
@@ -448,7 +448,7 @@ if (!minted || !address) {
 
 Add another image, to handle users that have minted your NFT, but don't anymore. We used a sad whale:
 
-![Sad Whale](../../assets/images/frames/gave-me-away.png)
+![Sad Whale](../../../../assets/images/frames/gave-me-away.png)
 
 ```tsx
 if (tokenIdsTo.length === 0) {
@@ -575,7 +575,7 @@ SVG images aren't working in Frames on mobile clients. Stay tuned on the Base ch
 
 **Remember to update your envars in Vercel**, redeploy, and test. You'll now see your NFT in the frame!
 
-![Real NFT](../../assets/images/frames/real-nft.png)
+![Real NFT](../../../../assets/images/frames/real-nft.png)
 
 ---
 

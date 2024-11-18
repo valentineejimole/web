@@ -72,7 +72,7 @@ You can also work from ours: [Sample Art]
 
 Either way, you should end up with something similar to this:
 
-![Mockup](../../assets/images/onchain-generative-nfts/mockup.png)
+![Mockup](../../../../assets/images/onchain-generative-nfts/mockup.png)
 
 ## The Art of Making it Fit
 
@@ -96,7 +96,7 @@ If you don't have the tools to do this, you can find these files here: [Sample A
 
 You'll need to build and deploy a number of contracts for this project. They'll be organized in this architecture:
 
-![Architecture](../../assets/images/onchain-generative-nfts/architecture.png)
+![Architecture](../../../../assets/images/onchain-generative-nfts/architecture.png)
 
 Deploying this many contracts will have a cost associated with it, but once they're deployed, this contract will cost the same as any other NFT contract. Remember, `pure` and `view` functions called outside the blockchain don't cost any gas. This means that you can use multiple contracts to assemble a relatively large graphic without additional costs!
 
@@ -434,7 +434,7 @@ Open the contract in [Basescan], connect with your wallet, and mint some NFTs.
 
 **Wait a few minutes**, then open the [testnet version of Opensea] and look up your contract. It may take several minutes to show up, but when it does, if everything is working you'll see NFTs with the ocean part of the art! Neat!
 
-![First pass NFT](../../assets/images/onchain-generative-nfts/first_pass.png)
+![First pass NFT](../../../../assets/images/onchain-generative-nfts/first_pass.png)
 
 ## Adding the Sky Renderer
 
@@ -789,7 +789,7 @@ const SVGRenderer = await deploy('SVGRenderer', {
 
 Test as before. It's starting to look really nice!
 
-![Progress](../../assets/images/onchain-generative-nfts/progress.png)
+![Progress](../../../../assets/images/onchain-generative-nfts/progress.png)
 
 ## Adding the Sun Renderer
 

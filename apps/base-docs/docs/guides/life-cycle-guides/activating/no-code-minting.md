@@ -71,7 +71,7 @@ const frameMetadata = getFrameMetadata({
 
 Commit and push to deploy the frame. Wait for Vercel to build, then test with the [Frame Validator]. You should see a frame with a single button, that opens a new window once the warning is passed:
 
-![link button](../../assets/images/frames/link-button-test.png)
+![link button](../../../../assets/images/frames/link-button-test.png)
 
 ## Setting up the Mint
 
