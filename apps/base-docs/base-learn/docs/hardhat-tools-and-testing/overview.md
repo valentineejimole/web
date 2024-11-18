@@ -17,7 +17,6 @@ keywords:
     blockchain development,
   ]
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 # Overview of Hardhat Tools and Testing

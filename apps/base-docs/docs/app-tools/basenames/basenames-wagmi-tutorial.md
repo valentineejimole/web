@@ -3,11 +3,9 @@ title: Basenames + Wagmi Tutorial
 slug: /basenames-tutorial-using-wagmi
 description: 'A tutorial that teaches how to integrate Basenames to your wagmi/viem App'
 author: hughescoin
-keywords:
-  ['build on base', 'viem', 'wagmi', 'frontend', 'onchain app development']
+keywords: ['build on base', 'viem', 'wagmi', 'frontend', 'onchain app development']
 tags: ['account abstraction']
 difficulty: beginner
-displayed_sidebar: null
 ---
 
 # Add Basenames to your onchain app
@@ -76,11 +74,7 @@ export const config = createConfig({
 
 const queryClient = new QueryClient();
 
-export default function EthereumProviders({
-  children,
-}: {
-  children: ReactNode;
-}) {
+export default function EthereumProviders({ children }: { children: ReactNode }) {
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
@@ -95,7 +89,7 @@ Next, we'll create a new directory to house the functions that will resolve and 
 
 In your project folder, create the apis directory and add a basenames.tsx file:
 
-:::note What's happening in the code? 
+:::note What's happening in the code?
 
 `convertReverseNodeToBytes()`: This function is creating the reverse node so we can look up a name given an address. Each address gets its own reverse record in our registry that's created in a deterministic way.
 
@@ -172,15 +166,9 @@ async function fetchData() {
 
   const avatar = await getBasenameAvatar(basename);
 
-  const description = await getBasenameTextRecord(
-    basename,
-    BasenameTextRecordKeys.Description
-  );
+  const description = await getBasenameTextRecord(basename, BasenameTextRecordKeys.Description);
 
-  const twitter = await getBasenameTextRecord(
-    basename,
-    BasenameTextRecordKeys.Twitter
-  );
+  const twitter = await getBasenameTextRecord(basename, BasenameTextRecordKeys.Twitter);
 
   return {
     basename,
@@ -195,41 +183,36 @@ export default async function Home() {
 
   return (
     <EthereumProviders>
-      <main className='flex min-h-screen flex-col gap-12 p-24'>
-        <div className='mb-12'>
-          <h1 className='text-xl mb-4'>Server-side rendered:</h1>
-          <ul className='flex flex-col gap-4'>
-            <li className='flex flex-col gap-2'>
+      <main className="flex min-h-screen flex-col gap-12 p-24">
+        <div className="mb-12">
+          <h1 className="mb-4 text-xl">Server-side rendered:</h1>
+          <ul className="flex flex-col gap-4">
+            <li className="flex flex-col gap-2">
               <span>Address</span>
               <strong>{address}</strong>
             </li>
-            <li className='flex flex-col gap-2'>
+            <li className="flex flex-col gap-2">
               <span>Basename</span>
               <strong>{data.basename}</strong>
             </li>
-            <li className='flex flex-col gap-2'>
+            <li className="flex flex-col gap-2">
               <span>Avatar</span>
               <strong>
-                <img
-                  src={data.avatar}
-                  alt={data.basename}
-                  width={100}
-                  height={100}
-                />
+                <img src={data.avatar} alt={data.basename} width={100} height={100} />
               </strong>
             </li>
-            <li className='flex flex-col gap-2'>
+            <li className="flex flex-col gap-2">
               <span>Description</span>
               <strong>{data.description}</strong>
             </li>
-            <li className='flex flex-col gap-2'>
+            <li className="flex flex-col gap-2">
               <span>Twitter</span>
               <strong>{data.twitter}</strong>
             </li>
           </ul>
         </div>
         <div>
-          <h1 className='text-xl mb-4'>Client-side rendered:</h1>
+          <h1 className="mb-4 text-xl">Client-side rendered:</h1>
           <BasenameDetails address={address} />
         </div>
       </main>

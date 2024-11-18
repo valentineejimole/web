@@ -4,7 +4,7 @@ slug: /farcaster-frames-hyperframes
 description: A tutorial that teaches how to make cross-linked HyperFrames in an organized manner.
 author: briandoyle81
 hide_table_of_contents: false
-displayed_sidebar: null
+
 keywords: [farcaster, frames, farcaster frames, HyperFrames, hyper frames, state, frame state, Base]
 difficulty: intermediate
 tags: ['frames', 'OnchainKit']

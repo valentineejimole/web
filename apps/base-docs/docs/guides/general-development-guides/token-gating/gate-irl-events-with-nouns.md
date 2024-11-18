@@ -7,7 +7,6 @@ keywords: [Solidity, ERC-721, token, NFT, Gate, Nouns, PFP]
 tags: ['nft', 'smart contracts', 'frontend']
 difficulty: intermediate
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 You've probably seen people in onchain communities use ⌐◨-◨ in their profile names. These are called _Nouns Goggles_, or _Noggles_. They're an ASCII representation of the glasses found on every procedurally generated [Nouns] NFT avatar. The [Nouns Auction] makes one new Noun available for auction every single day - forever!

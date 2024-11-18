@@ -7,7 +7,6 @@ keywords: [Foundry, Forge, Foundry Book, smart contract development, toolchain, 
 tags: ['smart contracts']
 difficulty: beginner
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 In this tutorial, you'll learn how to test your smart contracts using [Foundry], the toolchain for smart contract development.

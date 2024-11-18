@@ -22,7 +22,6 @@ keywords: [
   ]
 tags: ['oracles']
 difficulty: intermediate
-displayed_sidebar: null
 ---
 
 This tutorial will guide you through the process of creating a smart contract on Base that utilizes Pyth Network oracles to consume a price feed.

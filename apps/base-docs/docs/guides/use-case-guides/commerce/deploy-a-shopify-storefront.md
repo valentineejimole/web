@@ -8,7 +8,6 @@ keywords:
 tags: ['ecommerce', 'crypto', 'shopify', 'onchain summer', ocs]
 difficulty: easy
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 Deploy a Shopify Storefront with [Coinbase Commerce Plugin](https://docs.cdp.coinbase.com/commerce-onchain/docs/integrate-shopify/)

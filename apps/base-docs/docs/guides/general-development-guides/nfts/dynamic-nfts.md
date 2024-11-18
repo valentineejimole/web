@@ -20,7 +20,7 @@ keywords:
 tags: ['nft']
 difficulty: intermediate
 hide_table_of_contents: false
-displayed_sidebar: null
+ 
 ---
 
 # Build a Dynamic NFT on Base with Irys

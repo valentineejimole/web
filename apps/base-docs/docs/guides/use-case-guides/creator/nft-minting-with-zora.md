@@ -7,7 +7,6 @@ keywords: [Solidity, ERC-1155, token, NFT, wagmi, viem, Zora]
 tags: ['nft', 'smart wallet']
 difficulty: intermediate
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 [Zora]'s mission is to make creating on the internet free and valuable. To support this, they've made a number of no-code tools, SDKs, and contracts that make creating NFTs easier. They're also a part of the [superchain ecosystem], which means most of their tools also work on Base!

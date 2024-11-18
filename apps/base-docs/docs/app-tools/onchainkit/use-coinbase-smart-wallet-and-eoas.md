@@ -24,7 +24,6 @@ keywords:
 tags: ['account abstraction', 'frontend', 'OnchainKit', 'Smart Wallet']
 difficulty: beginner
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 The [Coinbase Smart Wallet] is a great way to onboard new users to onchain apps, and offers a number of experiential improvements to existing crypto users as well. As we're in a period of adoption and transition, a pain point has developed where a user with both the Smart Wallet and a browser-extension EOA can't always select the wallet they want while connecting to an app.

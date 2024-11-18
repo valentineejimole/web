@@ -6,7 +6,6 @@ author: hughescoin
 keywords: ['build on base', 'viem', 'wagmi', 'frontend', 'onchain app development']
 tags: ['account abstraction']
 difficulty: beginner
-displayed_sidebar: null
 ---
 
 # Create email campaigns for smart wallets using Resend

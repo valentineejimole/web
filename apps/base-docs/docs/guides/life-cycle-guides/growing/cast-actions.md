@@ -7,7 +7,6 @@ keywords: [farcaster, cast actions, farcaster cast actions, farcaster actions]
 tags: ['frames', 'actions', 'OnchainKit']
 difficulty: beginner
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 [Cast Actions] are a new feature of [Farcaster] that enable you to create actions that users can install on their Farcaster client and then click a button on any cast to trigger the action. In this tutorial, you'll learn how to build a simple cast action with [OnchainKit] that returns a message to the Farcaster client.

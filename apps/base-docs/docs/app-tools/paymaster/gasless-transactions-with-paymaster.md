@@ -20,7 +20,6 @@ keywords:
 tags: ['account abstraction', 'Paymaster']
 difficulty: easy
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 # Gasless Transactions on Base using Base Paymaster

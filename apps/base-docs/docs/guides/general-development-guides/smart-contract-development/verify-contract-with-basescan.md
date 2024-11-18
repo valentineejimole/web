@@ -4,7 +4,7 @@ slug: /verify-smart-contract-using-basescan
 description: A tutorial that teaches how to verify a smart contract using Basescan APIs.
 author: hughescoin
 hide_table_of_contents: false
-displayed_sidebar: null
+
 keywords: [Base, Solidity, ERC-721, token]
 difficulty: beginner
 tags: ['smart contracts']

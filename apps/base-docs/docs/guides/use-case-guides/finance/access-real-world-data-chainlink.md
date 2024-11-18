@@ -21,7 +21,6 @@ keywords: [
   ]
 tags: ['oracles']
 difficulty: intermediate
-displayed_sidebar: null
 ---
 
 This tutorial will guide you through the process of creating a smart contract on Base that utilizes Chainlink Data Feeds to access real-world data, such as asset prices, directly from your smart contracts.

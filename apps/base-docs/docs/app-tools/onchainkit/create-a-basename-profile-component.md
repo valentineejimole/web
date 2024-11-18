@@ -7,7 +7,6 @@ keywords: [basename, profile, component, onchain, dapp]
 tags: ['frontend', 'identity']
 difficulty: medium
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 Onchain identities often include social media links and profile information stored as text records. In this tutorial, you'll learn how to create a component that fetches and displays this information for a given basename.

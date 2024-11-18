@@ -4,7 +4,6 @@ slug: /tools/basenames-faq
 description: 'Frequently asked questions on basenames.'
 keywords: ['basenames', 'faq']
 tags: ['basenames']
-displayed_sidebar: null
 ---
 
 ## FAQ

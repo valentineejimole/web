@@ -7,7 +7,7 @@ author: briandoyle81
 keywords: ["Remix", "Remix IDE", "smart contract", "Base", "Base test network", "Base testnet", "Node.js", "Solidity", "smart contract deployment", "deploy a smart contract", "build on Base", "write smart contract", "smart contract development", "online IDE"]
 tags: ["smart contracts"]
 difficulty: beginner
-displayed_sidebar: null
+ 
 ---
 
 [Remix] is an online IDE that you can use to rapidly develop and deploy smart contracts. If you're new to smart contracts, it's a great tool that lets you jump right in without needing to configure a local editor or struggle through environment configuration issues before getting started.

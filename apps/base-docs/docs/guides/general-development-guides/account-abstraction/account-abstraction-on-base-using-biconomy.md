@@ -19,7 +19,6 @@ keywords:
   ]
 tags: ['account abstraction']
 difficulty: intermediate
-displayed_sidebar: null
 ---
 
 This page will guide you through the process of implementing Account Abstraction in your Base projects using Biconomy paymasters, bundlers, and smart accounts.

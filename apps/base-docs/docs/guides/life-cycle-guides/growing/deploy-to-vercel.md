@@ -15,7 +15,6 @@ keywords: [
 tags: ['frames', 'OnchainKit']
 difficulty: beginner
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 To share your [Frames] on [Farcaster], you must first deploy them to the web. Farcaster reads the metadata from your site to build the Frame as it initially appears to the user. In this tutorial, you'll learn how to deploy the frame in the [OnchainKit] example - [a-frame-in-100-lines].

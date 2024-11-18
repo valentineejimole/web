@@ -26,7 +26,6 @@ keywords:
   ]
 tags: ['smart contracts']
 difficulty: beginner
-displayed_sidebar: null
 ---
 
 [thirdweb](https://thirdweb.com) is a development framework that allows you to build web3 functionality into your applications.

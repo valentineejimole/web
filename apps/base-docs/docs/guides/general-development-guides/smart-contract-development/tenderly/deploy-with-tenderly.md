@@ -23,7 +23,6 @@ keywords:
   ]
 tags: ['smart contracts']
 difficulty: beginner
-displayed_sidebar: null
 ---
 
 This tutorial shows you how to set up a private environment for smart contract **development on Base Network** using **Tenderly DevNets**.

@@ -18,7 +18,6 @@ keywords: [
   ]
 tags: ['account abstraction']
 difficulty: intermediate
-displayed_sidebar: null
 ---
 
 Particle Network is a Smart Wallet-as-a-Service provider on Base, providing a modular Account Abstraction stack, allowing developers to use a variety of Paymasters, Bundlers, or smart accounts along with social logins.

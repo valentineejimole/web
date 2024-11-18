@@ -7,7 +7,7 @@ keywords: [deploy, fleek, onchain, dapp, onchain app]
 tags: ['frontend']
 difficulty: hard
 hide_table_of_contents: false
-displayed_sidebar: null
+
 image: https://docs.base.org/img/base-learn-open-graph.png
 ---
 

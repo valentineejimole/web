@@ -15,7 +15,6 @@ keywords:
 tags: ['smart contracts']
 difficulty: beginner
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 In this tutorial, you'll learn how to debug your smart contracts using the built-in debugging capabilities of Hardhat.

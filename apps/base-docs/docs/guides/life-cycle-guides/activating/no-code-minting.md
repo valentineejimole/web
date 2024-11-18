@@ -7,7 +7,6 @@ keywords: [Solidity, ERC-721, token, NFT, farcaster, frames, farcaster frames, m
 tags: ['frames', 'nft', 'OnchainKit']
 difficulty: beginner
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 [Frames] on [Farcaster] allow you to add buttons that link to external sites in a new window. In this tutorial, you'll learn how to build a frame with [OnchainKit] that links to an NFT mint on [mint.fun], a no-code platform for creating and sharing NFT collections. If you're new to frames and not ready to write a smart contract, this is an excellent starting point! If you've already made a few, this one does showcase the latest features, so check it out and make sure you haven't missed anything.

@@ -7,7 +7,6 @@ keywords: [Solidity, ERC-721, token, NFT, wagmi, viem, smart wallet]
 tags: ['nft', 'Smart Wallet', 'Paymaster']
 difficulty: intermediate
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 The [Coinbase Smart Wallet] is a new application of account abstraction that makes it easy to give the exact same onboarding to both native crypto users who have their own EOA wallet, and new users who would benefit from an easier onboarding to crypto. For the former, the wallet works almost exactly the way they are used to. For the latter, [passkeys] are used to create a wallet and securely save the keys.

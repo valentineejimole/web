@@ -7,7 +7,6 @@ keywords: [Solidity, ERC-721, token, NFT, thirdweb, Unreal, c++, blueprints, onc
 tags: ['nft', 'smart contracts']
 difficulty: hard
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 [thirdweb] provides a number of contracts and tools for building onchain. Their [Gaming SDK] enables seamless onboarding, cross-platform support, and provides many other features. It's compatible with [Unreal Engine] and can be used to enable onchain elements in your games.

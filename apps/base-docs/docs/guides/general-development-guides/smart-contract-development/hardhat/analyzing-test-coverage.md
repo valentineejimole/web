@@ -19,7 +19,6 @@ keywords:
 tags: ['smart contracts']
 difficulty: beginner
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 In this tutorial, you'll learn how to profile the test coverage of your smart contracts with [Hardhat] and the [Solidity Coverage] community plugin.

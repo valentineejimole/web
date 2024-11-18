@@ -7,7 +7,6 @@ keywords: [farcaster, openframe, onchainKit, farcaster, open frames]
 tags: ['frontend']
 difficulty: intermediate
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 # Convert Farcaster Frame to Open Frame using OnchainKit

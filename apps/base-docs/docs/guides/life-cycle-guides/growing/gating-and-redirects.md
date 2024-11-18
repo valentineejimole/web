@@ -7,7 +7,6 @@ keywords: [farcaster, frames, farcaster frames]
 tags: ['frames', 'OnchainKit']
 difficulty: intermediate
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 You can build complex and exciting [Frames] on [Farcaster] that meet the community's expectation for new and exciting things to do. [OnchainKit], and our [a-frame-in-100-lines] demo give you a number of tools to build complex interactions within a frame.

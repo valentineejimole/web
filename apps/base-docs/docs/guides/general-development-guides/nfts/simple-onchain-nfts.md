@@ -21,7 +21,6 @@ keywords:
 tags: ['nft']
 difficulty: easy
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 Many NFTs are dependent on offchain metadata and images. Some use immutable storage locations, such as [IPFS]. Others use traditional web locations, and many of these allow the owner of the contract to modify the URL returned by a contract when a site or user attempts to retrieve the location of the token art and metadata. This power isn't inherently bad, because we probably want someone to be able to fix the contract if the storage location goes down. However, it does introduce a requirement to trust the contract owner.

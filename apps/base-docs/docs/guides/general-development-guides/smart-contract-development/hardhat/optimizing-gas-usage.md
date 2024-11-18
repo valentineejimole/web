@@ -18,7 +18,6 @@ keywords:
 tags: ['smart contracts']
 difficulty: beginner
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 In this tutorial, you'll learn how to profile and optimize your smart contract's gas usage with Hardhat and the [Hardhat Gas Reporter] plugin.

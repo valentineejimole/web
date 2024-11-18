@@ -24,7 +24,6 @@ keywords:
   ]
 tags: ['smart contracts', 'nft']
 difficulty: beginner
-displayed_sidebar: null
 ---
 
 In this tutorial you will learn how to build an app on Base using the [thirdweb](https://portal.thirdweb.com/) platform.

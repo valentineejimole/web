@@ -17,7 +17,6 @@ keywords: [
   ]
 tags: ['frontend', 'wallet', 'ethereum']
 difficulty: medium
-displayed_sidebar: null
 ---
 
 In this tutorial, you'll learn how to build an onchain app that checks a user's wallet balance and either allows them to mint an NFT or prompts them to add funds. We'll use the OnchainKit App Template as a starting point.

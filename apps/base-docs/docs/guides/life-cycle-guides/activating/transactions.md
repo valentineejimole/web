@@ -7,7 +7,6 @@ keywords: [farcaster, frames, farcaster frames, wallet, transaction, Base]
 tags: ['frames', 'OnchainKit']
 difficulty: intermediate
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 [Frames] on [Farcaster] support wallet transactions invoked directly from the buttons in a Frame! [OnchainKit] supports this feature. In this tutorial, you'll learn how to set up a frame that will allow your users to complete a simple transaction.

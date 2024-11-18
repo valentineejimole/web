@@ -7,7 +7,6 @@ keywords: [Solidity, ERC-721, token, NFT, farcaster, frames, farcaster frames]
 tags: ['frames', 'nft', 'OnchainKit']
 difficulty: beginner
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 [Frames] have taken the [Farcaster] world by storm. They allow you to place a small onchain app inside of a cast! In this tutorial, we'll show you how to build your first frame using [OnchainKit], and our [a-frame-in-100-lines] template.

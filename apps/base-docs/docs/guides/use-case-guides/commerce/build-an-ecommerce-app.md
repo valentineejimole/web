@@ -18,7 +18,6 @@ keywords: [
 tags: ['account abstraction']
 difficulty: intermediate
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 # Build a eCommerce App using Coinbase Commerce and OnchainKit

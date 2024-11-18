@@ -17,7 +17,6 @@ keywords:
   ]
 tags: ['cross-chain']
 difficulty: intermediate
-displayed_sidebar: null
 ---
 
 This tutorial will guide you through the process of sending cross-chain message data from a Base smart contract to another smart contract on a different chain using LayerZero V2.

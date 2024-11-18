@@ -7,7 +7,6 @@ keywords: [Solidity, ERC-721, token, NFT, signature mint, viem, soulbound]
 tags: ['nft']
 difficulty: intermediate
 hide_table_of_contents: false
-displayed_sidebar: null
 ---
 
 A _signature mint_ is a term for an NFT mint in which the recipient of the NFT pays for their own gas to receive the NFT, but may only do so if they possess a correct message signed by the owner or authorized address of the mint contract. Reasons for doing this include allowing fiat payment of minting fees, allowing holders of an NFT on one chain to mint that NFT on an unrelated chain, or gating the mint to users who meet other specific offchain requirements.

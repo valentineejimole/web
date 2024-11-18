@@ -8,7 +8,7 @@ keywords: ["Hardhat", "smart contract", "ERC-721", "Base", "Base test network", 
 "deploy a smart contract", "build on base", "write smart contract", "smart contract development"]
 tags: ["smart contracts"]
 difficulty: beginner
-displayed_sidebar: null
+ 
 ---
 
 import Tabs from '@theme/Tabs';
