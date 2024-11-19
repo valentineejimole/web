@@ -226,7 +226,7 @@ module.exports = {
           type: 'category',
           label: 'FAQ & Troubleshooting',
           items: [
-            'wallet-tools/wallet-sdk/existing-faq',
+            'wallet-tools/wallet-sdk/faq',
             'wallet-tools/wallet-sdk/errors',
             'wallet-tools/wallet-sdk/handling-multiple-injected-extensions',
             'wallet-tools/wallet-sdk/mobile-dapp-integration-via-deep-linking',
@@ -241,7 +241,7 @@ module.exports = {
         {
           type: 'category',
           label: 'Quickstart Guide',
-          items: ['wallet-tools/smart-wallet/existing-quick-start'],
+          items: ['wallet-tools/smart-wallet/quick-start'],
         },
         {
           type: 'category',
@@ -257,9 +257,49 @@ module.exports = {
           type: 'category',
           label: 'Tutorials',
           items: [
-            'wallet-tools/smart-wallet/existing-guides-section',
-            'wallet-tools/smart-wallet/coinbase-smart-wallet-tutorial',
-            'wallet-tools/smart-wallet/smart-wallet-and-rainbow-kit',
+            {
+              type: 'category',
+              label: 'Create a New Web App',
+              items: [
+                'wallet-tools/smart-wallet/guides/create-app/using-onchain-app-template',
+                'wallet-tools/smart-wallet/guides/create-app/using-wagmi',
+              ],
+            },
+            'wallet-tools/smart-wallet/guides/update-existing-app',
+            'wallet-tools/smart-wallet/guides/react-native-integration',
+            'wallet-tools/smart-wallet/guides/components/create-wallet-button',
+            'wallet-tools/smart-wallet/guides/signature-verification',
+            'wallet-tools/smart-wallet/guides/siwe',
+            'wallet-tools/smart-wallet/guides/batch-transactions',
+            'wallet-tools/smart-wallet/guides/send-transaction',
+            'wallet-tools/smart-wallet/guides/send-transaction-with-gas-price-oracle',
+            'wallet-tools/smart-wallet/guides/send-transaction-with-paymaster',
+            {
+              type: 'category',
+              label: 'Spend Permissions',
+              items: [
+                'wallet-tools/smart-wallet/guides/spend-permissions/overview',
+                'wallet-tools/smart-wallet/guides/spend-permissions/quick-start',
+                'wallet-tools/smart-wallet/guides/spend-permissions/revoke-a-spend-permission',
+                {
+                  type: 'category',
+                  label: 'API Reference',
+                  items: [
+                    'wallet-tools/smart-wallet/guides/spend-permissions/api-reference/client-resources',
+                    'wallet-tools/smart-wallet/guides/spend-permissions/api-reference/spendpermissionmanager',
+                    'wallet-tools/smart-wallet/guides/spend-permissions/api-reference/wallet-fetchpermissions',
+                  ],
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Tips & Tricks',
+              items: [
+                'wallet-tools/smart-wallet/guides/tips/inspect-txn-simulation',
+                'wallet-tools/smart-wallet/guides/tips/popup-tips',
+              ],
+            },
           ],
         },
         {
