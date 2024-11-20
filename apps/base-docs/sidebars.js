@@ -121,7 +121,7 @@ module.exports = {
       label: 'Paymaster',
       items: [
         'app-tools/paymaster/quickstart-guide',
-        'app-tools/paymaster/introduction',
+        'app-tools/paymaster/welcome',
         {
           type: 'category',
           label: 'Tutorials',

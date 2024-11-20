@@ -1,0 +1,37 @@
+---
+title: Welcome to Paymaster
+sidebar_label: Welcome
+slug: welcome
+---
+
+The Coinbase Paymaster API provides [ERC-4337](https://www.erc4337.io/) Account Abstraction endpoints to send transactions from smart wallets and sponsor gas for users.
+
+Paymaster is [ERC-7677](https://www.erc7677.xyz/introduction) compliant and supports both [pm_getPaymasterStubData](https://www.erc7677.xyz/reference/paymasters/getPaymasterStubData) and [pm_getPaymasterData](https://www.erc7677.xyz/reference/paymasters/getPaymasterData).
+
+The endpoint also provides access to our Bundler.
+
+## Get started
+
+1. [Create](https://coinbase.com/developer-platform) a new CDP account or [sign in](https://portal.cdp.coinbase.com) to your existing account.
+2. Create a new project.
+3. Navigate to the Paymaster product where you'll see $100 in credits (and can get $500 more for adding a payment method).
+4. Use the Playground to make a request and see the response.
+5. Set your gas policy configurations. Allowlist at least one contract to protect against unintended sponsorship (disregard if allowlisting through a paymaster proxy).
+6. Start sending UserOperations and creating gasless experiences for your users.
+7. [Apply for additional gas credits](https://docs.google.com/forms/d/1yPnBFW0bVUNLUN_w3ctCqYM9sjdIQO3Typ53KXlsS5g/viewform?edit_requested=true&pli=1) as you scale.
+
+<details>
+<summary><b>Expand for images and click to enlarge</b></summary>
+<div>
+
+<figcaption>
+  <i>Paymaster - Smart Wallet Sponsored Transaction</i>
+</figcaption> <img
+  src={require('../assets/images/pb-sponsorship-scw.png').default}
+  width="700"
+  alt=""
+/> <br />
+<br />
+
+</div>
+</details>
