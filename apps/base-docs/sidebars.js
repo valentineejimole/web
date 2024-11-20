@@ -130,17 +130,22 @@ module.exports = {
         {
           type: 'category',
           label: 'Documentation',
-          items: ['app-tools/paymaster/to-be-built'],
+          items: [
+            'app-tools/paymaster/erc20-paymaster',
+            'app-tools/paymaster/security',
+            'app-tools/paymaster/errors',
+            'app-tools/paymaster/quickstart-headless',
+          ],
         },
         {
           type: 'category',
           label: 'FAQ & Troubleshooting',
-          items: ['app-tools/paymaster/paymaster-faq'],
+          items: ['app-tools/paymaster/troubleshooting'],
         },
         {
           type: 'category',
           label: 'Support & Contribution',
-          items: ['app-tools/paymaster/how-to-contribute', 'app-tools/paymaster/report-a-bug'],
+          items: ['app-tools/paymaster/how-to-contribute'],
         },
       ],
     },
@@ -226,7 +231,7 @@ module.exports = {
           type: 'category',
           label: 'FAQ & Troubleshooting',
           items: [
-            'wallet-tools/wallet-sdk/faq',
+            'wallet-tools/wallet-sdk/existing-faq',
             'wallet-tools/wallet-sdk/errors',
             'wallet-tools/wallet-sdk/handling-multiple-injected-extensions',
             'wallet-tools/wallet-sdk/mobile-dapp-integration-via-deep-linking',
@@ -271,16 +276,12 @@ module.exports = {
             'wallet-tools/smart-wallet/guides/signature-verification',
             'wallet-tools/smart-wallet/guides/siwe',
             'wallet-tools/smart-wallet/guides/batch-transactions',
-            'wallet-tools/smart-wallet/guides/send-transaction',
-            'wallet-tools/smart-wallet/guides/send-transaction-with-gas-price-oracle',
-            'wallet-tools/smart-wallet/guides/send-transaction-with-paymaster',
             {
               type: 'category',
               label: 'Spend Permissions',
               items: [
                 'wallet-tools/smart-wallet/guides/spend-permissions/overview',
                 'wallet-tools/smart-wallet/guides/spend-permissions/quick-start',
-                'wallet-tools/smart-wallet/guides/spend-permissions/revoke-a-spend-permission',
                 {
                   type: 'category',
                   label: 'API Reference',
@@ -314,7 +315,7 @@ module.exports = {
         {
           type: 'category',
           label: 'FAQ & Troubleshooting',
-          items: ['wallet-tools/smart-wallet/existing-faq'],
+          items: ['wallet-tools/smart-wallet/FAQ'],
         },
       ],
     },

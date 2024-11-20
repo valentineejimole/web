@@ -1,18 +1,16 @@
-import { Callout } from "vocs/components";
-
 # Create a React Native App
 
-<Callout type="info">
-  This doc is updated for Mobile Wallet Protocol Client `v0.1.0`
-</Callout>
+::: info
+This doc is updated for Mobile Wallet Protocol Client `v0.1.0`
+:::
 
 This guide will walk you through adding support for Smart Wallet into a React Native app by integrating the [Mobile Wallet Protocol Client](https://www.npmjs.com/package/@mobile-wallet-protocol/client).
 
-<Callout type="success">
-  **Tips**: If you need a template or scaffold to start with, you can check out
-  the [Smart Wallet Expo
-  Example](https://github.com/MobileWalletProtocol/smart-wallet-expo-example).
-</Callout>
+::: tip
+**Tips**: If you need a template or scaffold to start with, you can check out
+the [Smart Wallet Expo
+Example](https://github.com/MobileWalletProtocol/smart-wallet-expo-example).
+:::
 
 ::::steps
 
@@ -25,17 +23,16 @@ At runtime, a link like `https://your-app.example.com/mobile-wallet-protocol` sh
 
 Follow this [Expo Guide](https://docs.expo.dev/guides/deep-linking/) for detailed instructions on setting up deeplinks in the Expo environment, this is a required setup for smart wallet to work.
 
-<Callout type="warning">
-  Please make sure you hosted `apple-app-site-association` file and
-  `assetlinks.json` file under your domain's `/.well-known/` path.
-</Callout>
+::: warning
+Please make sure you hosted `apple-app-site-association` file and `assetlinks.json` file under
+your domain's `/.well-known/` path.
+:::
 
-<Callout type="warning">
-  When instantiating the SDK, `appDeeplinkUrl` is required to establish your
-  app's identity. Use 'https://' links for production. If a custom scheme
-  `myapp://` is provided, users will see a banner warning about the insecure
-  connection.
-</Callout>
+::: warning
+When instantiating the SDK, `appDeeplinkUrl` is required to establish your app's identity. Use
+'https://' links for production. If a custom scheme `myapp://` is provided, users will see a
+banner warning about the insecure connection.
+:::
 
 ### Install peer dependencies
 
@@ -75,18 +72,18 @@ yarn add expo-crypto expo-standard-web-crypto react-native-url-polyfill
 :::code-group
 
 ```js [polyfills.js]
-import "react-native-url-polyfill/auto";
-import { polyfillWebCrypto } from "expo-standard-web-crypto";
-import { randomUUID } from "expo-crypto";
+import 'react-native-url-polyfill/auto';
+import { polyfillWebCrypto } from 'expo-standard-web-crypto';
+import { randomUUID } from 'expo-crypto';
 
 polyfillWebCrypto();
 crypto.randomUUID = randomUUID;
 ```
 
 ```tsx [App.tsx]
-import "./polyfills"; // import before @mobile-wallet-protocol/client
+import './polyfills'; // import before @mobile-wallet-protocol/client
 
-import { CoinbaseWalletSDK } from "@mobile-wallet-protocol/client";
+import { CoinbaseWalletSDK } from '@mobile-wallet-protocol/client';
 
 /// ...
 ```
@@ -118,19 +115,18 @@ In your app, this might look something like the following.
 
 Below is an example of how to set up deeplink handling in your app using the [Expo Linking module](https://docs.expo.dev/guides/linking/).
 
-<Callout type="warning">
-  If you are using a different library, you will need to adapt the code
-  accordingly.
-</Callout>
+:::warning
+If you are using a different library, you will need to adapt the code accordingly.
+:::
 
 ```tsx [App.tsx]
-import { handleResponse } from "@mobile-wallet-protocol/client";
-import * as Linking from "expo-linking";
+import { handleResponse } from '@mobile-wallet-protocol/client';
+import * as Linking from 'expo-linking';
 
 // ...
 
 useEffect(() => {
-  const subscription = Linking.addEventListener("url", ({ url }) => {
+  const subscription = Linking.addEventListener('url', ({ url }) => {
     const handled = handleResponse(url);
     if (!handled) {
       // handle other deeplinks
@@ -145,37 +141,35 @@ useEffect(() => {
 
 Mobile Wallet Protocol Client provides 2 interfaces for mobile app to interact with the Smart Wallet, an EIP-1193 compliant provider interface and a wagmi connector.
 
-<Callout type="success">
-  If your app is using wallet aggregator, go straight to **Option 2: Wagmi
-  Connector** for 1-line integration. :)
-</Callout>
+:::success
+If your app is using wallet aggregator, go straight to **Option 2: Wagmi Connector** for 1-line
+integration. :)
+:::
 
 ### Option 1: EIP-1193 Provider
 
-<Callout type="warning">
-  Note that we are iterating on the Mobile Wallet Protocol Client and the API
-  may change.
-</Callout>
+:::warning
+Note that we are iterating on the Mobile Wallet Protocol Client and the API may change.
+:::
 
 Create a new `EIP1193Provider` instance, which is EIP-1193 compliant.
 
 The `appDeeplinkUrl` is required and should match the deeplink URL you set up earlier.
 
-<Callout type="success">
-  The `appCustomScheme` config option can be used to remove the Done screen
-  after signing.
-</Callout>
+:::success
+The `appCustomScheme` config option can be used to remove the Done screen after signing.
+:::
 
 ```tsx [App.tsx]
-import { EIP1193Provider } from "@mobile-wallet-protocol/client";
+import { EIP1193Provider } from '@mobile-wallet-protocol/client';
 
 // Step 1. Initialize provider with your dapp's metadata and target wallet
 const metadata = {
-  appDeeplinkUrl: "https://your-app.example.com", // required to establish your app's identity, use 'https://' link for production
-  appCustomScheme: "myapp://", // optional, used to remove the Done screen after signing
-  appName: "My App Name",
+  appDeeplinkUrl: 'https://your-app.example.com', // required to establish your app's identity, use 'https://' link for production
+  appCustomScheme: 'myapp://', // optional, used to remove the Done screen after signing
+  appName: 'My App Name',
   appChainIds: [8453],
-  appLogoUrl: "https://example.com/logo.png",
+  appLogoUrl: 'https://example.com/logo.png',
 };
 const provider = new EIP1193Provider({
   metadata,
@@ -185,10 +179,10 @@ const provider = new EIP1193Provider({
 // ...
 
 // 2. Use the provider
-const addresses = await provider.request({ method: "eth_requestAccounts" });
+const addresses = await provider.request({ method: 'eth_requestAccounts' });
 const signedData = await provider.request({
-  method: "personal_sign",
-  params: ["0x48656c6c6f20776f726c6421", addresses[0]],
+  method: 'personal_sign',
+  params: ['0x48656c6c6f20776f726c6421', addresses[0]],
 });
 ```
 
@@ -210,23 +204,19 @@ yarn add @mobile-wallet-protocol/wagmi-connectors@latest
 
 Simply import the `createConnectorFromWallet` function and pass in the wallet you want to use to wagmi config.
 
-<Callout type="success">
-  The `appCustomScheme` config option can be used to remove the Done screen
-  after signing.
-</Callout>
+:::success
+The `appCustomScheme` config option can be used to remove the Done screen after signing.
+:::
 
 ```ts [config.ts]
-import {
-  createConnectorFromWallet,
-  Wallets,
-} from "@mobile-wallet-protocol/wagmi-connectors";
+import { createConnectorFromWallet, Wallets } from '@mobile-wallet-protocol/wagmi-connectors';
 
 const metadata = {
-  appDeeplinkUrl: "https://your-app.example.com", // required to establish your app's identity, use 'https://' link for production
-  appCustomScheme: "myapp://", // optional, used to remove the Done screen after signing
-  appName: "My App Name",
+  appDeeplinkUrl: 'https://your-app.example.com', // required to establish your app's identity, use 'https://' link for production
+  appCustomScheme: 'myapp://', // optional, used to remove the Done screen after signing
+  appName: 'My App Name',
   appChainIds: [8453],
-  appLogoUrl: "https://example.com/logo.png",
+  appLogoUrl: 'https://example.com/logo.png',
 };
 
 export const config = createConfig({
@@ -246,7 +236,7 @@ export const config = createConfig({
 Then you can use wagmi's react interface to interact with the Smart Wallet.
 
 ```tsx [App.tsx]
-import { useConnect } from "wagmi";
+import { useConnect } from 'wagmi';
 
 // ...
 
@@ -254,7 +244,7 @@ const { connect, connectors } = useConnect();
 
 return (
   <Button
-    title={"Connect"}
+    title={'Connect'}
     onPress={() => {
       connect({ connector: connectors[0] });
     }}

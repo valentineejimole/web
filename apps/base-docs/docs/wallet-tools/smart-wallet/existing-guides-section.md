@@ -1,1 +1,0 @@
-# Existing Guides Section

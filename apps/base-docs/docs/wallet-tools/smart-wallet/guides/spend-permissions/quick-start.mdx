@@ -1,5 +1,3 @@
-import { Callout } from "vocs/components";
-
 # Getting Started with Spend Permissions
 
 This guide will walk you through a simple example of building an app that leverages Spend Permissions using
@@ -33,13 +31,13 @@ SPENDER_PRIVATE_KEY=
 NEXT_PUBLIC_SPENDER_ADDRESS=
 ```
 
-<Callout type="danger">
-  Always secure your private keys appropriately! We insecurely use an
-  environment variable in this demo for simplicity.
-</Callout>
+::: danger
+Always secure your private keys appropriately! We insecurely use an
+environment variable in this demo for simplicity.
+:::
 
 Our spender will need to sign transactions from our app, so we'll create a wallet (private key and address) for our spender.
-If you have [Foundry](https://book.getfoundry.sh/) installed, you can generate a new wallet via `cast wallet new`. If you already have a 
+If you have [Foundry](https://book.getfoundry.sh/) installed, you can generate a new wallet via `cast wallet new`. If you already have a
 development keypair you can use that too. Assign the private key and address to
 `SPENDER_PRIVATE_KEY` and `NEXT_PUBLIC_SPENDER_ADDRESS`, respectively.
 
@@ -50,9 +48,9 @@ Our client is what our app will use to communicate with the blockchain.
 Create a sibling directory to `app` called `lib` and add the following `spender.ts` file to create your spender client.
 
 ```ts [lib/spender. ts]
-import { createPublicClient, createWalletClient, Hex, http } from "viem";
-import { baseSepolia } from "viem/chains";
-import { privateKeyToAccount } from "viem/accounts";
+import { createPublicClient, createWalletClient, Hex, http } from 'viem';
+import { baseSepolia } from 'viem/chains';
+import { privateKeyToAccount } from 'viem/accounts';
 
 export async function getPublicClient() {
   const client = createPublicClient({
@@ -63,9 +61,7 @@ export async function getPublicClient() {
 }
 
 export async function getSpenderWalletClient() {
-  const spenderAccount = privateKeyToAccount(
-    process.env.SPENDER_PRIVATE_KEY! as Hex
-  );
+  const spenderAccount = privateKeyToAccount(process.env.SPENDER_PRIVATE_KEY! as Hex);
 
   const spenderWallet = await createWalletClient({
     account: spenderAccount,
@@ -119,10 +115,10 @@ Inside your `/lib` directory, create a new subdirectory called `/abi`. This is w
 
 Add a new file called `SpendPermissionManager.ts` and copy and paste the code from [this file](https://github.com/ilikesymmetry/spend-permissions-quickstart/blob/main/lib/abi/SpendPermissionManager.ts).
 
-<Callout type="info">
-  [Here's an example](https://docs.basescan.org/api-endpoints/contracts) of
-  finding the ABI for any verified contract on Basescan.
-</Callout>
+::: info
+[Here's an example](https://docs.basescan.org/api-endpoints/contracts) of
+finding the ABI for any verified contract on Basescan.
+:::
 
 ### Add a Subscribe button
 
@@ -134,19 +130,13 @@ Create a subdirectory inside `/app` called `/components` and paste the following
 We'll walk through what's happening here in subsequent steps.
 
 ```tsx showLineNumbers
-"use client";
-import { cn, color, pressable, text } from "@coinbase/onchainkit/theme";
-import { useEffect, useState } from "react";
-import {
-  useAccount,
-  useChainId,
-  useConnect,
-  useConnectors,
-  useSignTypedData,
-} from "wagmi";
-import { Address, Hex, parseUnits } from "viem";
-import { useQuery } from "@tanstack/react-query";
-import { spendPermissionManagerAddress } from "@/lib/abi/SpendPermissionManager";
+'use client';
+import { cn, color, pressable, text } from '@coinbase/onchainkit/theme';
+import { useEffect, useState } from 'react';
+import { useAccount, useChainId, useConnect, useConnectors, useSignTypedData } from 'wagmi';
+import { Address, Hex, parseUnits } from 'viem';
+import { useQuery } from '@tanstack/react-query';
+import { spendPermissionManagerAddress } from '@/lib/abi/SpendPermissionManager';
 
 export default function Subscribe() {
   const [isDisabled, setIsDisabled] = useState(false);
@@ -161,7 +151,7 @@ export default function Subscribe() {
   const connectors = useConnectors();
 
   const { data, error, isLoading, refetch } = useQuery({
-    queryKey: ["collectSubscription"],
+    queryKey: ['collectSubscription'],
     queryFn: handleCollectSubscription,
     refetchOnWindowFocus: false,
     enabled: !!signature,
@@ -184,37 +174,37 @@ export default function Subscribe() {
     const spendPermission = {
       account: accountAddress, // User wallet address
       spender: process.env.NEXT_PUBLIC_SPENDER_ADDRESS! as Address, // Spender smart contract wallet address
-      token: "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE" as Address, // ETH (https://eips.ethereum.org/EIPS/eip-7528)
-      allowance: parseUnits("10", 18),
+      token: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE' as Address, // ETH (https://eips.ethereum.org/EIPS/eip-7528)
+      allowance: parseUnits('10', 18),
       period: 86400, // seconds in a day
       start: 0, // unix timestamp
       end: 281474976710655, // max uint48
       salt: BigInt(0),
-      extraData: "0x" as Hex,
+      extraData: '0x' as Hex,
     };
 
     try {
       const signature = await signTypedDataAsync({
         domain: {
-          name: "Spend Permission Manager",
-          version: "1",
+          name: 'Spend Permission Manager',
+          version: '1',
           chainId: chainId,
           verifyingContract: spendPermissionManagerAddress,
         },
         types: {
           SpendPermission: [
-            { name: "account", type: "address" },
-            { name: "spender", type: "address" },
-            { name: "token", type: "address" },
-            { name: "allowance", type: "uint160" },
-            { name: "period", type: "uint48" },
-            { name: "start", type: "uint48" },
-            { name: "end", type: "uint48" },
-            { name: "salt", type: "uint256" },
-            { name: "extraData", type: "bytes" },
+            { name: 'account', type: 'address' },
+            { name: 'spender', type: 'address' },
+            { name: 'token', type: 'address' },
+            { name: 'allowance', type: 'uint160' },
+            { name: 'period', type: 'uint48' },
+            { name: 'start', type: 'uint48' },
+            { name: 'end', type: 'uint48' },
+            { name: 'salt', type: 'uint256' },
+            { name: 'extraData', type: 'bytes' },
           ],
         },
-        primaryType: "SpendPermission",
+        primaryType: 'SpendPermission',
         message: spendPermission,
       });
       setSpendPermission(spendPermission);
@@ -230,15 +220,15 @@ export default function Subscribe() {
     let data;
     try {
       const replacer = (key: string, value: any) => {
-        if (typeof value === "bigint") {
+        if (typeof value === 'bigint') {
           return value.toString();
         }
         return value;
       };
-      const response = await fetch("/collect", {
-        method: "POST",
+      const response = await fetch('/collect', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(
           {
@@ -246,11 +236,11 @@ export default function Subscribe() {
             signature,
             dummyData: Math.ceil(Math.random() * 100),
           },
-          replacer
+          replacer,
         ),
       });
       if (!response.ok) {
-        throw new Error("Network response was not ok");
+        throw new Error('Network response was not ok');
       }
       data = await response.json();
     } catch (e) {
@@ -272,61 +262,49 @@ export default function Subscribe() {
           <button
             className={cn(
               pressable.primary,
-              "w-full rounded-xl",
-              "px-4 py-3 font-medium text-base text-white leading-6",
+              'w-full rounded-xl',
+              'px-4 py-3 text-base font-medium leading-6 text-white',
               isDisabled && pressable.disabled,
-              text.headline
+              text.headline,
             )}
             onClick={handleSubmit}
             type="button"
             disabled={isDisabled}
             data-testid="ockTransactionButton_Button"
           >
-            <span
-              className={cn(
-                text.headline,
-                color.inverse,
-                "flex justify-center"
-              )}
-            >
+            <span className={cn(text.headline, color.inverse, 'flex justify-center')}>
               Subscribe
             </span>
           </button>
         </div>
       ) : (
-        <div className="space-y-8 w-[450px]">
+        <div className="w-[450px] space-y-8">
           <div className="flex">
             <button
               className={cn(
                 pressable.primary,
-                "w-full rounded-xl",
-                "px-4 py-3 font-medium text-base text-white leading-6",
+                'w-full rounded-xl',
+                'px-4 py-3 text-base font-medium leading-6 text-white',
                 isDisabled && pressable.disabled,
-                text.headline
+                text.headline,
               )}
               onClick={() => refetch()}
               type="button"
               disabled={isDisabled}
               data-testid="collectSubscriptionButton_Button"
             >
-              <span
-                className={cn(
-                  text.headline,
-                  color.inverse,
-                  "flex justify-center"
-                )}
-              >
+              <span className={cn(text.headline, color.inverse, 'flex justify-center')}>
                 Collect Subscription
               </span>
             </button>
           </div>
-          <div className="h-80 space-y-4 relative">
+          <div className="relative h-80 space-y-4">
             <div className="text-lg font-bold">Subscription Payments</div>
             <div className="flex flex-col">
               {transactions.map((transactionHash, i) => (
                 <a
                   key={i}
-                  className="hover:underline text-ellipsis truncate"
+                  className="truncate text-ellipsis hover:underline"
                   target="_blank"
                   href={`https://sepolia.basescan.org/tx/${transactionHash}`}
                 >
@@ -342,7 +320,7 @@ export default function Subscribe() {
 }
 ```
 
-Also be sure to add this new `Subscribe` button component to the top level component in `page.tsx`. 
+Also be sure to add this new `Subscribe` button component to the top level component in `page.tsx`.
 You can delete lines 77-127 and put your button there.
 
 ```tsx [page.tsx]
@@ -414,10 +392,10 @@ export default function Subscribe() {
 As part of our button handler `handleSubmit`, in lines 61-91 of our subscribe component we call [`signTypedDataAsync`](https://wagmi.sh/react/api/hooks/useSignTypedData),
 a Wagmi hook that will prompt our user to create a signature from their wallet across the details of the spend permission.
 
-<Callout type="info">
-  SpendPermissions use [ERC-712](https://eips.ethereum.org/EIPS/eip-712)
-  signatures.
-</Callout>
+::: info
+SpendPermissions use [ERC-712](https://eips.ethereum.org/EIPS/eip-712)
+signatures.
+:::
 
 ```tsx [Subscribe.tsx]
 
@@ -485,15 +463,15 @@ async function handleCollectSubscription() {
   let data;
   try {
     const replacer = (key: string, value: any) => {
-      if (typeof value === "bigint") {
+      if (typeof value === 'bigint') {
         return value.toString();
       }
       return value;
     };
-    const response = await fetch("/collect", {
-      method: "POST",
+    const response = await fetch('/collect', {
+      method: 'POST',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
       body: JSON.stringify(
         {
@@ -501,11 +479,11 @@ async function handleCollectSubscription() {
           signature,
           dummyData: Math.ceil(Math.random() * 100),
         },
-        replacer
+        replacer,
       ),
     });
     if (!response.ok) {
-      throw new Error("Network response was not ok");
+      throw new Error('Network response was not ok');
     }
     data = await response.json();
   } catch (e) {
@@ -523,12 +501,12 @@ Create a new subdirectory under `/app` called `collect`. Create a new file there
 code:
 
 ```ts [route.tsx]
-import { NextRequest, NextResponse } from "next/server";
-import { getPublicClient, getSpenderWalletClient } from "../../lib/spender";
+import { NextRequest, NextResponse } from 'next/server';
+import { getPublicClient, getSpenderWalletClient } from '../../lib/spender';
 import {
   spendPermissionManagerAbi,
   spendPermissionManagerAddress,
-} from "../../lib/abi/SpendPermissionManager";
+} from '../../lib/abi/SpendPermissionManager';
 
 export async function POST(request: NextRequest) {
   const spenderBundlerClient = await getSpenderWalletClient();
@@ -540,7 +518,7 @@ export async function POST(request: NextRequest) {
     const approvalTxnHash = await spenderBundlerClient.writeContract({
       address: spendPermissionManagerAddress,
       abi: spendPermissionManagerAbi,
-      functionName: "approveWithSignature",
+      functionName: 'approveWithSignature',
       args: [spendPermission, signature],
     });
 
@@ -551,8 +529,8 @@ export async function POST(request: NextRequest) {
     const spendTxnHash = await spenderBundlerClient.writeContract({
       address: spendPermissionManagerAddress,
       abi: spendPermissionManagerAbi,
-      functionName: "spend",
-      args: [spendPermission, "1"],
+      functionName: 'spend',
+      args: [spendPermission, '1'],
     });
 
     const spendReceipt = await publicClient.waitForTransactionReceipt({
@@ -560,7 +538,7 @@ export async function POST(request: NextRequest) {
     });
 
     return NextResponse.json({
-      status: spendReceipt.status ? "success" : "failure",
+      status: spendReceipt.status ? 'success' : 'failure',
       transactionHash: spendReceipt.transactionHash,
       transactionUrl: `https://sepolia.basescan.org/tx/${spendReceipt.transactionHash}`,
     });
