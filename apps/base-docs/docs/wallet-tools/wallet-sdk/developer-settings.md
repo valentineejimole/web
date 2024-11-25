@@ -6,7 +6,7 @@ slug: 'developer-settings'
 
 Developer settings provides additional features for development and managing your wallet, such as enabling test networks, viewing your private key, and other experimental features.
 
-![new-developer-settings.gif](../assets/developer-settings-overview.gif)
+![new-developer-settings.gif](../../../assets/images/wallet-sdk/developer-settings-overview.gif)
 
 ## Testnets
 

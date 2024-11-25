@@ -269,11 +269,11 @@ module.exports = {
               type: 'category',
               label: 'Injected Solana provider',
               items: [
-                'wallet-tools/wallet-sdk/solana-injected-provider',
+                'wallet-tools/wallet-sdk/solana-provider',
                 'wallet-tools/wallet-sdk/solana-connecting-accounts',
                 'wallet-tools/wallet-sdk/solana-sending-transactions',
                 'wallet-tools/wallet-sdk/solana-signing-messages',
-                'wallet-tools/wallet-sdk/solana-api-reference',
+                'wallet-tools/wallet-sdk/solana-provider-api',
               ],
             },
             {
