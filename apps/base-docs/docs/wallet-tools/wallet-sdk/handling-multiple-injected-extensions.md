@@ -1,1 +1,0 @@
-# Handling Multiple Injected Extensions 

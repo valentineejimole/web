@@ -196,13 +196,15 @@ module.exports = {
       items: [
         {
           type: 'category',
-          label: 'Quickstart Guide',
-          items: ['wallet-tools/wallet-sdk/wallet-sdk-mobile-sdk'],
-        },
-        {
-          type: 'category',
           label: 'Introduction',
-          items: ['wallet-tools/wallet-sdk/existing-welcome-page-features'],
+          items: [
+            'wallet-tools/wallet-sdk/welcome',
+            'wallet-tools/wallet-sdk/wallet-features',
+            'wallet-tools/wallet-sdk/supported-environments',
+            'wallet-tools/wallet-sdk/whitelisted-networks',
+            'wallet-tools/wallet-sdk/developer-settings',
+            'wallet-tools/wallet-sdk/injected-provider',
+          ],
         },
         {
           type: 'category',
@@ -214,27 +216,92 @@ module.exports = {
         },
         {
           type: 'category',
-          label: 'Documentation',
+          label: 'Coinbase Wallet SDK',
           items: [
-            'wallet-tools/wallet-sdk/wallet-sdk-existing-section',
-            'wallet-tools/wallet-sdk/wallet-mobile-sdk',
-            'wallet-tools/wallet-sdk/smart-wallet',
-            'wallet-tools/wallet-sdk/supported-environments',
-            'wallet-tools/wallet-sdk/whitelisted-networks',
-            'wallet-tools/wallet-sdk/developer-settings',
-            'wallet-tools/wallet-sdk/ux-guidelines',
-            'wallet-tools/wallet-sdk/coinbase-wallet-injected-ethereum-provider',
-            'wallet-tools/wallet-sdk/xmtp',
+            'wallet-tools/wallet-sdk/installing',
+            'wallet-tools/wallet-sdk/setup',
+            {
+              type: 'category',
+              label: 'Making Requests',
+              items: [
+                'wallet-tools/wallet-sdk/getting-eth-accounts',
+                'wallet-tools/wallet-sdk/switching-chains',
+                'wallet-tools/wallet-sdk/tracking-assets',
+              ],
+            },
+            'wallet-tools/wallet-sdk/disconnecting-links',
           ],
+        },
+        {
+          type: 'category',
+          label: 'Coinbase Wallet Mobile SDK',
+          items: [
+            'wallet-tools/wallet-sdk/mobile-sdk-overview',
+            {
+              type: 'category',
+              label: 'iOS',
+              items: [
+                'wallet-tools/wallet-sdk/ios-install',
+                'wallet-tools/wallet-sdk/ios-setup',
+                'wallet-tools/wallet-sdk/ios-establishing-a-connection',
+                'wallet-tools/wallet-sdk/ios-making-requests',
+                'wallet-tools/wallet-sdk/ios-api-reference',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Android',
+              items: [
+                'wallet-tools/wallet-sdk/android-install',
+                'wallet-tools/wallet-sdk/android-setup',
+                'wallet-tools/wallet-sdk/android-establishing-a-connection',
+                'wallet-tools/wallet-sdk/android-making-requests',
+                'wallet-tools/wallet-sdk/android-api-reference',
+              ],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Solana Developers',
+          items: [
+            {
+              type: 'category',
+              label: 'Injected Solana provider',
+              items: [
+                'wallet-tools/wallet-sdk/solana-injected-provider',
+                'wallet-tools/wallet-sdk/solana-connecting-accounts',
+                'wallet-tools/wallet-sdk/solana-sending-transactions',
+                'wallet-tools/wallet-sdk/solana-signing-messages',
+                'wallet-tools/wallet-sdk/solana-api-reference',
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Solana wallet adapter',
+              items: ['wallet-tools/wallet-sdk/solana-adapter-guide'],
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Xmtp',
+          items: ['wallet-tools/wallet-sdk/xmtp'],
+        },
+        {
+          type: 'category',
+          label: 'Sample Applications',
+          items: ['wallet-tools/wallet-sdk/sample-applications'],
         },
         {
           type: 'category',
           label: 'FAQ & Troubleshooting',
           items: [
-            'wallet-tools/wallet-sdk/existing-faq',
+            'wallet-tools/wallet-sdk/faq',
             'wallet-tools/wallet-sdk/errors',
-            'wallet-tools/wallet-sdk/handling-multiple-injected-extensions',
+            'wallet-tools/wallet-sdk/injected-provider-guidance',
             'wallet-tools/wallet-sdk/mobile-dapp-integration-via-deep-linking',
+            'wallet-tools/wallet-sdk/ux-guidelines',
           ],
         },
       ],
